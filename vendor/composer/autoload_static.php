@@ -18,6 +18,7 @@ class ComposerStaticInitefba49473575d5ef8fc8b6b069696a2b
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '07d7f1a47144818725fd8d91a907ac57' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/create_uploaded_file.php',
         'da94ac5d3ca7d2dbab84ce561ce72bfd' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/marshal_headers_from_sapi.php',
@@ -35,15 +36,16 @@ class ComposerStaticInitefba49473575d5ef8fc8b6b069696a2b
         'cc8e14526dc240491e17a838cb78508c' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/normalize_server.legacy.php',
         '786bf90caabc9e09b6ad4cc5ca8f0e30' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/normalize_uploaded_files.legacy.php',
         '751a5a3f463e4be759be31748b61737c' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/parse_cookie_header.legacy.php',
-        'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2f69d3914119f042cca9e44442d5ce95' => __DIR__ . '/../..' . '/core/includes/bootstrap.inc',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'T' => 
         array (
             'Twig\\' => 5,
+            'TijsVerkoyen\\CssToInlineStyles\\' => 31,
             'TYPO3\\PharStreamWrapper\\' => 24,
         ),
         'S' => 
@@ -74,6 +76,7 @@ class ComposerStaticInitefba49473575d5ef8fc8b6b069696a2b
             'Symfony\\Component\\ErrorHandler\\' => 31,
             'Symfony\\Component\\DependencyInjection\\' => 38,
             'Symfony\\Component\\Debug\\' => 24,
+            'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Cmf\\Component\\Routing\\' => 30,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
@@ -83,6 +86,7 @@ class ComposerStaticInitefba49473575d5ef8fc8b6b069696a2b
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'M' => 
         array (
@@ -95,6 +99,10 @@ class ComposerStaticInitefba49473575d5ef8fc8b6b069696a2b
             'Laminas\\Feed\\' => 13,
             'Laminas\\Escaper\\' => 16,
             'Laminas\\Diactoros\\' => 18,
+        ),
+        'H' => 
+        array (
+            'Html2Text\\' => 10,
         ),
         'G' => 
         array (
@@ -136,6 +144,10 @@ class ComposerStaticInitefba49473575d5ef8fc8b6b069696a2b
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'TijsVerkoyen\\CssToInlineStyles\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src',
         ),
         'TYPO3\\PharStreamWrapper\\' => 
         array (
@@ -245,6 +257,10 @@ class ComposerStaticInitefba49473575d5ef8fc8b6b069696a2b
         array (
             0 => __DIR__ . '/..' . '/symfony/debug',
         ),
+        'Symfony\\Component\\CssSelector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/css-selector',
+        ),
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
@@ -270,6 +286,10 @@ class ComposerStaticInitefba49473575d5ef8fc8b6b069696a2b
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
         'Masterminds\\' => 
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
@@ -293,6 +313,11 @@ class ComposerStaticInitefba49473575d5ef8fc8b6b069696a2b
         'Laminas\\Diactoros\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-diactoros/src',
+        ),
+        'Html2Text\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/html2text/html2text/src',
+            1 => __DIR__ . '/..' . '/html2text/html2text/test',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (

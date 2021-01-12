@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'a4ae961a9b9a39d1f00d2103221bf9fc37737631',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -149,6 +149,15 @@
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/blazy' => 
+    array (
+      'pretty_version' => '2.1.0',
+      'version' => '2.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.1',
     ),
     'drupal/block' => 
     array (
@@ -739,12 +748,12 @@
     ),
     'drupal/legacy-project' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'a4ae961a9b9a39d1f00d2103221bf9fc37737631',
     ),
     'drupal/link' => 
     array (
@@ -759,6 +768,15 @@
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/mailsystem' => 
+    array (
+      'pretty_version' => '4.3.0',
+      'version' => '4.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-4.3',
     ),
     'drupal/media' => 
     array (
@@ -864,6 +882,15 @@
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/phpmailer_smtp' => 
+    array (
+      'pretty_version' => '2.0.2',
+      'version' => '2.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2.0.2',
     ),
     'drupal/profile' => 
     array (
@@ -976,6 +1003,15 @@
         0 => '9.1.0',
       ),
     ),
+    'drupal/swiftmailer' => 
+    array (
+      'pretty_version' => '2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.0',
+    ),
     'drupal/syslog' => 
     array (
       'replaced' => 
@@ -1062,6 +1098,15 @@
         0 => '9.1.0',
       ),
     ),
+    'drupal/views_infinite_scroll' => 
+    array (
+      'pretty_version' => '1.7.0',
+      'version' => '1.7.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.7',
+    ),
     'drupal/views_ui' => 
     array (
       'replaced' => 
@@ -1082,6 +1127,15 @@
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/youtube' => 
+    array (
+      'pretty_version' => '1.2.0',
+      'version' => '1.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.2',
     ),
     'egulias/email-validator' => 
     array (
@@ -1118,6 +1172,15 @@
       array (
       ),
       'reference' => '53330f47520498c0ae1f61f7e2c90f55690c06a3',
+    ),
+    'html2text/html2text' => 
+    array (
+      'pretty_version' => '4.3.1',
+      'version' => '4.3.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '61ad68e934066a6f8df29a3d23a6460536d0855c',
     ),
     'laminas/laminas-diactoros' => 
     array (
@@ -1208,6 +1271,15 @@
       array (
       ),
       'reference' => 'dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7',
+    ),
+    'phpmailer/phpmailer' => 
+    array (
+      'pretty_version' => 'v6.2.0',
+      'version' => '6.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e38888a75c070304ca5514197d4847a59a5c853f',
     ),
     'psr/container' => 
     array (
@@ -1319,6 +1391,15 @@
       ),
       'reference' => 'a4faaa6f532c6086bc66c29e1bc6c29593e1ca7c',
     ),
+    'swiftmailer/swiftmailer' => 
+    array (
+      'pretty_version' => 'v6.2.4',
+      'version' => '6.2.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '56f0ab23f54c4ccbb0d5dcc67ff8552e0c98d59e',
+    ),
     'symfony-cmf/routing' => 
     array (
       'pretty_version' => '2.3.3',
@@ -1336,6 +1417,15 @@
       array (
       ),
       'reference' => '20f73dd143a5815d475e0838ff867bce1eebd9d5',
+    ),
+    'symfony/css-selector' => 
+    array (
+      'pretty_version' => 'v5.2.1',
+      'version' => '5.2.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f789e7ead4c79e04ca9a6d6162fc629c89bd8054',
     ),
     'symfony/debug' => 
     array (
@@ -1600,6 +1690,15 @@
       array (
       ),
       'reference' => '543cb4dbd45ed803f08a9a65f27fb149b5dd20c2',
+    ),
+    'tijsverkoyen/css-to-inline-styles' => 
+    array (
+      'pretty_version' => '2.2.3',
+      'version' => '2.2.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b43b05cf43c1b6d849478965062b6ef73e223bb5',
     ),
     'twig/twig' => 
     array (
