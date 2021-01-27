@@ -48,11 +48,15 @@ class WishlistShareMail implements WishlistShareMailInterface {
     $owner = $wishlist->getOwner();
     if (!$owner || $owner->isAnonymous()) {
       // Only wishlists belonging to authenticated users can be shared.
-      return FALSE;
+      // COMBAK: Tahoe edit comment out return FALSE
+      //return FALSE;
     }
 
-    $subject = $this->t('Check out my @site-name wishlist', [
+    $subject = $this->t('@sender_name sent you a wishlist from @site-name ', [
       '@site-name' => $this->configFactory->get('system.site')->get('name'),
+      // COMBAK: TAHOE CODE
+      '@sender_name' => $_SESSION['sender_data']['#sender_name'],
+      // COMBAK: EO TAHOE CODE
     ]);
     $body = [
       '#theme' => 'commerce_wishlist_share_mail',

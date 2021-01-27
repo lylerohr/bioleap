@@ -8,6 +8,8 @@
 use Drupal\commerce\PurchasableEntityInterface;
 use Drupal\commerce_wishlist\Entity\WishlistInterface;
 use Drupal\commerce_wishlist\Entity\WishlistType;
+// COMBAK: TAHOE ADDED
+use Drupal\commerce_wishlist\Form\WishlistShareForm;
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\PrependCommand;
 use Drupal\Core\Ajax\ReplaceCommand;
@@ -70,6 +72,10 @@ function commerce_wishlist_theme($existing, $type, $theme, $path) {
     'commerce_wishlist_share_mail' => [
       'variables' => [
         'wishlist_entity' => NULL,
+        // COMBAK: TAHOE ADDED var
+        'sender_name' => NULL,
+        'sender_message' => NULL,
+        'sender_data' => NULL,
       ],
     ],
     'commerce_wishlist_user_form' => [
@@ -145,6 +151,13 @@ function template_preprocess_commerce_wishlist_share_mail(array &$variables) {
   $wishlist_url = $wishlist->toUrl('canonical', ['absolute' => TRUE]);
 
   $variables['wishlist_url'] = $wishlist_url->toString();
+
+  // COMBAK: TAHOE CODE
+  $sender_data = $_SESSION['sender_data'];
+  $variables['sender_name'] = $sender_data['#sender_name'];
+  $variables['sender_message'] = $sender_data['#sender_message'];
+  $_SESSION['sender_data'] = [];
+  // COMBAK: EO TAHOE CODE
 }
 
 /**

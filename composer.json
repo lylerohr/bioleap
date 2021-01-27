@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "drupal/admin_toolbar": "^2.4",
         "drupal/blazy": "^2.1",
         "drupal/commerce": "^2.21",
         "drupal/commerce_wishlist": "^3.0-beta4",
@@ -23,12 +24,14 @@
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
         "drupal/core-vendor-hardening": "^9.1",
+        "drupal/devel": "^4.1",
         "drupal/facets": "^1.6",
         "drupal/inline_entity_form": "^1.0-rc6",
         "drupal/mailsystem": "^4.3",
         "drupal/phpmailer_smtp": "^2.0",
         "drupal/search_api": "^1.18",
         "drupal/swiftmailer": "^2.0",
+        "drupal/vardumper": "^1.5",
         "drupal/views_infinite_scroll": "^1.7",
         "drupal/youtube": "^1.2"
     },

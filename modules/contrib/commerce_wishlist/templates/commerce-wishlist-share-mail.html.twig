@@ -10,15 +10,10 @@
  * @ingroup themeable
  */
 #}
-<p>
-  {% trans %}Check out my wishlist!{% endtrans %}
-</p>
 
-<p>
-  {% trans %}I use my wishlist for keeping track of items I am interested in.{% endtrans %} <br>
-  {% trans %}To see the list in the store and buy items from it, <a href="{{ wishlist_url }}">click here</a>.{% endtrans %}
-</p>
 
-<p>
-  {% trans %}Thanks for having a look!{% endtrans %}
-</p>
+
+<h2>{{ sender_name }} has sent you a list of dissection alternatives.</h2>
+<p>You can have a look at it <a href="{{ wishlist_url }}">here</a>.
+<h2>{{ sender_name }} also wanted you to know:</h2>
+<p>{{ sender_message }}</p>

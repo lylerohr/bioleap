@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'a4ae961a9b9a39d1f00d2103221bf9fc37737631',
+    'reference' => 'bc70d417e62ea16b2f2d5f9d2b789655ffa96fba',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -78,6 +78,15 @@ private static $installed = array (
       ),
       'reference' => 'ce77a7ba1770462cd705a91a151b6c3746f9c6ad',
     ),
+    'doctrine/cache' => 
+    array (
+      'pretty_version' => '1.10.2',
+      'version' => '1.10.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '13e3381b25847283a91948d04640543941309727',
+    ),
     'doctrine/collections' => 
     array (
       'pretty_version' => '1.6.7',
@@ -87,6 +96,33 @@ private static $installed = array (
       ),
       'reference' => '55f8b799269a1a472457bd1a41b4f379d4cfba4a',
     ),
+    'doctrine/common' => 
+    array (
+      'pretty_version' => '2.13.3',
+      'version' => '2.13.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f3812c026e557892c34ef37f6ab808a6b567da7f',
+    ),
+    'doctrine/event-manager' => 
+    array (
+      'pretty_version' => '1.1.1',
+      'version' => '1.1.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '41370af6a30faa9dc0368c4a6814d596e81aba7f',
+    ),
+    'doctrine/inflector' => 
+    array (
+      'pretty_version' => '1.4.3',
+      'version' => '1.4.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4650c8b30c753a76bf44fb2ed00117d6f367490c',
+    ),
     'doctrine/lexer' => 
     array (
       'pretty_version' => '1.2.1',
@@ -95,6 +131,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'e864bbf5904cb8f5bb334f99209b48018522f042',
+    ),
+    'doctrine/persistence' => 
+    array (
+      'pretty_version' => '1.3.8',
+      'version' => '1.3.8.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7a6eac9fb6f61bba91328f15aa7547f4806ca288',
     ),
     'doctrine/reflection' => 
     array (
@@ -120,6 +165,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '8.x-1.9',
+    ),
+    'drupal/admin_toolbar' => 
+    array (
+      'pretty_version' => '2.4.0',
+      'version' => '2.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.4',
     ),
     'drupal/aggregator' => 
     array (
@@ -590,6 +644,15 @@ private static $installed = array (
         0 => '9.1.0',
       ),
     ),
+    'drupal/devel' => 
+    array (
+      'pretty_version' => '4.1.1',
+      'version' => '4.1.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4.1.1',
+    ),
     'drupal/dynamic_page_cache' => 
     array (
       'replaced' => 
@@ -766,7 +829,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'a4ae961a9b9a39d1f00d2103221bf9fc37737631',
+      'reference' => 'bc70d417e62ea16b2f2d5f9d2b789655ffa96fba',
     ),
     'drupal/link' => 
     array (
@@ -1103,6 +1166,15 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/vardumper' => 
+    array (
+      'pretty_version' => '1.5.0',
+      'version' => '1.5.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.5',
     ),
     'drupal/views' => 
     array (

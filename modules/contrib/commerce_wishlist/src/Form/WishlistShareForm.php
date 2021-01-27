@@ -56,9 +56,26 @@ class WishlistShareForm extends EntityForm {
 
     $form['to'] = [
       '#type' => 'email',
-      '#title' => $this->t('Recipient'),
+      '#title' => $this->t('Recipient Email'),
       '#required' => TRUE,
     ];
+
+// COMBAK tahoe edit
+
+    $form['sender_name'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Your Name'),
+      '#required' => FALSE,
+    ];
+
+    $form['sender_message'] = [
+      '#type' => 'textarea',
+      '#title' => $this->t('Your Message'),
+      '#required' => FALSE,
+    ];
+
+
+// COMBAK eo tahoe edit
 
     return $form;
   }
@@ -69,7 +86,7 @@ class WishlistShareForm extends EntityForm {
   protected function actions(array $form, FormStateInterface $form_state) {
     $actions['submit'] = [
       '#type' => 'submit',
-      '#value' => $this->t('Send email'),
+      '#value' => $this->t('Share Wishlist'),
       '#submit' => ['::submitForm'],
     ];
     if ($this->isAjax()) {
@@ -86,10 +103,24 @@ class WishlistShareForm extends EntityForm {
     /** @var \Drupal\commerce_wishlist\Entity\WishlistInterface $wishlist */
     $wishlist = $this->entity;
     $to = $form_state->getValue('to');
+
+    // COMBAK: TAHOE CODE
+    $_SESSION['sender_data'] = [];
+
+    $sender_data = [
+        '#theme' => 'commerce_wishlist_share_mail',
+        '#sender_name' => $form_state->getValue('sender_name'),
+        '#sender_message' => $form_state->getValue('sender_message')
+    ];
+
+    $_SESSION['sender_data'] = $sender_data;
+    // COMBAK: EO TAHOE CODE
+
     $this->wishlistShareMail->send($wishlist, $to);
 
-    $this->messenger()->addStatus($this->t('Shared the wishlist to @recipient.', [
+    $this->messenger()->addStatus($this->t('Shared the wishlist to @sender_name at the following email address: @recipient.', [
       '@recipient' => $to,
+      '@sender_name' => $sender_data['#sender_name']
     ]));
     $form_state->setRedirectUrl($wishlist->toUrl('user-form'));
   }
