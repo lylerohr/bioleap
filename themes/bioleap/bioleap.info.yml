@@ -6,7 +6,7 @@ name: BioLEAP
 description: BioLEAP Custom Theme
 libraries:
     - bioleap/global-css
-#    - bioleap/global-scripts
+    - bioleap/global-scripts
 regions:
     header: 'Header'
     masthead: 'Masthead'

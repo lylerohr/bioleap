@@ -23,6 +23,23 @@
 		"oAP": "/bioleap.libraries.yml",
 		"oF": 1
 		},
+	"/build/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/build/.gitignore",
+		"oF": 0
+		},
+	"/scripts/scripts.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/scripts/scripts-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/styles/app.css": {
 		"aP": 1,
 		"bl": 0,
@@ -32,6 +49,13 @@
 		"oAP": "/styles/app-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/styles/app.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/styles/app.css.map",
+		"oF": 0
 		},
 	"/themedev/assets/styles/app.css": {
 		"aP": 1,
@@ -1566,6 +1590,26 @@
 		"oAP": "/themedev/assets/vendor/bootstrap-sass-grid/yarn.lock",
 		"oF": 0
 		},
+	"/themedev/assets/vendor/prism/prism-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/themedev/assets/vendor/prism/prism-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/themedev/assets/vendor/prism/prism-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/themedev/assets/vendor/prism/prism-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/themedev/assets/vendor/prism/prism.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1717,6 +1761,16 @@
 		"oAP": "/themedev/components/index.html",
 		"oF": 0
 		},
+	"/themedev/components/scripts/scripts-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/themedev/components/scripts/scripts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/themedev/components/scripts/scripts.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1737,7 +1791,8 @@
 	"displayValue": "bioleap",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_orange",
-	"iconImageWasSetByUser": 0
+	"iconImageWasSetByUser": 0,
+	"lastBuiltDate": 633636327.933038
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

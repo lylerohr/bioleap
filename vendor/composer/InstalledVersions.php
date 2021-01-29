@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'bc70d417e62ea16b2f2d5f9d2b789655ffa96fba',
+    'reference' => '47f7587df835e2142065b1ff69804920743d5637',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -829,7 +829,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'bc70d417e62ea16b2f2d5f9d2b789655ffa96fba',
+      'reference' => '47f7587df835e2142065b1ff69804920743d5637',
     ),
     'drupal/link' => 
     array (
@@ -944,6 +944,15 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/paragraphs' => 
+    array (
+      'pretty_version' => '1.12.0',
+      'version' => '1.12.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.12',
     ),
     'drupal/path' => 
     array (
