@@ -1,0 +1,14 @@
+.#{$pre}template {
+    @extend .container-fluid;
+    padding-top: $nav-height * 1.15;
+
+    @include respond-to(desktop) {
+        padding-top: $nav-height * 1.5;
+    }
+
+    &__section {
+    	@include make-row;
+    	position: relative;
+    	padding: 0 0 6rem 0;
+    }
+}

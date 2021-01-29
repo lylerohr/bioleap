@@ -1,0 +1,11 @@
+a {
+	@extend %link;
+}
+
+.#{$pre}link {
+	@extend %link;
+
+	&--inline {
+		@extend %link--inline;
+	}
+}

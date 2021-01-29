@@ -1,0 +1,47 @@
+.#{$pre}text {
+	@extend %text;
+
+	&--extra-tiny {
+		@extend %text--extra-tiny;
+	}
+
+	&--tiny {
+		@extend %text--tiny;
+	}
+
+	&--extra-small {
+		@extend %text--extra-small;
+	}
+
+	&--small{
+		@extend %text--small;
+	}
+
+	&--base {
+		@extend %text--base;
+	}
+
+	&--large {
+		@extend %text--large;
+	}
+
+	&--extra-large {
+		@extend %text--extra-large;
+	}
+
+	&--massive {
+		@extend %text--massive
+	}
+
+	&--monolithic {
+		@extend %text--monolithic;
+	}
+}
+
+p {
+	@extend %text;
+}
+
+pre {
+	//@extend %text--code;
+}

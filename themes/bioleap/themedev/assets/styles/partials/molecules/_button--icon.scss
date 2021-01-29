@@ -1,0 +1,30 @@
+.#{$pre}button--icon {
+
+    &-right {
+        @extend %button--default;
+        .#{$pre}button__icon {
+
+        }
+    }
+
+    &-left {
+        @extend %button--default;
+        .#{$pre}button__icon {
+
+        }
+    }
+
+    &--ghost-right {
+        @extend %button--ghost;
+        .#{$pre}button__icon {
+
+        }
+    }
+
+    &--ghost-left {
+        @extend %button--ghost;
+        .#{$pre}button__icon {
+
+        }
+    }
+}

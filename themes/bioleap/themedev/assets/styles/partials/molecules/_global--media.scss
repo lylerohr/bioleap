@@ -1,0 +1,55 @@
+.#{$pre}media,
+.#{$pre}media__body {
+    overflow: hidden;
+    _overflow: visible;
+    zoom: 1;
+}
+
+.#{$pre}media {
+    margin: 0 0 margin(large) 0;
+
+    &__interest {
+        float: left;
+        margin-right: margin(base);
+        max-width: 50%;
+    }
+
+    &__interest-content {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__body {
+
+        .#{$pre}media__title {
+
+        }
+
+        .#{$pre}media__copy {
+
+        }
+
+        .#{$pre}media__cta {
+            margin-right: margin(base);
+            margin-bottom: margin(base);
+        }
+
+        .#{$pre}media__secondary-cta {
+            clear: both;
+            display: block;
+
+            &--inline {
+                clear: none;
+                display: inline-block;
+            }
+        }
+
+    }
+
+    &--nested {
+        clear: both;
+        padding-top: padding(large);
+        padding-left: padding(extra-large);
+        margin-bottom: margin(base);
+    }
+}

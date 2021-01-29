@@ -1,0 +1,10 @@
+button,
+.#{$pre}_button {
+	&--default {
+		@extend %button--default;
+	}
+
+	&--ghost {
+		@extend %button--ghost;
+	}
+}

@@ -1,0 +1,15 @@
+.#{$pre}surface {
+    @extend .container;
+
+    &__section {
+        padding-bottom: 4rem;
+
+        @include respond-to(tablet) {
+            padding-bottom: 5rem;
+        }
+
+        @include respond-to(desktop) {
+            padding-bottom: 6rem;
+        }
+    }
+}

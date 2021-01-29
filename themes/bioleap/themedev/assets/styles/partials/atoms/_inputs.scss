@@ -1,0 +1,13 @@
+fieldset {
+	margin: margin(base);
+	padding: 0;
+	border: none;
+}
+
+textarea {
+	@extend %input;
+}
+
+.#{$pre}input {
+	@extend %input;
+}

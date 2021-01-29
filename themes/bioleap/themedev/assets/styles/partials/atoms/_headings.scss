@@ -1,0 +1,46 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	font-weight: normal;
+	@extend %heading;
+}
+
+h1,
+.#{$pre}heading--1 {
+	@extend %heading--monolithic;
+}
+
+h2,
+.#{$pre}heading--2 {
+	@extend %heading--massive;
+}
+
+h3,
+.#{$pre}heading--3 {
+	@extend %heading--extra-large;
+}
+
+h4,
+.#{$pre}heading--4 {
+	@extend %heading--large;
+}
+
+h5,
+.#{$pre}heading--5 {
+	@extend %heading--base;
+	font-family: font-family(text--bold)
+}
+
+h6,
+.#{$pre}heading--6 {
+	@extend %heading--small;
+}

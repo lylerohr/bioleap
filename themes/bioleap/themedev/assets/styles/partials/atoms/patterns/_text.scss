@@ -1,0 +1,92 @@
+// TEXT PATTERNS
+
+// @extend %text
+$text-patterns: (
+	pattern-config: (
+		responsive-type: true,
+		size: base,
+		name: 'text',
+		type-style: text,
+	),
+	display: block,
+	margin: 0 0 margin(base) 0,
+	padding: 0,
+	white-space: normal,
+	font-family: font-family(text),
+	color: color(text),
+	text-align: left,
+	vertical-align: inherit,
+	touch-action: auto,
+	cursor: inherit,
+	background-image: none,
+	background-color: color(clear),
+	border: border(none),
+	modifiers: (
+		"--monolithic": (
+			pattern-config: (
+				responsive-type: true,
+				size: monolithic,
+				type-style: text,
+			),
+		),
+		"--massive": (
+			pattern-config: (
+				responsive-type: true,
+				size: massive,
+				type-style: text,
+			),
+		),
+		"--extra-large": (
+			pattern-config: (
+				responsive-type: true,
+				size: extra-large,
+				type-style: text,
+			),
+		),
+		"--large": (
+			pattern-config: (
+				responsive-type: true,
+				size: large,
+				type-style: text,
+			),
+		),
+		"--base": (
+			pattern-config: (
+				responsive-type: true,
+				size: base,
+				type-style: text,
+			),
+		),
+		"--small": (
+			pattern-config: (
+				responsive-type: true,
+				size: small,
+				type-style: text,
+			),
+		),
+		"--extra-small": (
+			pattern-config: (
+				responsive-type: true,
+				size: extra-small,
+				type-style: text,
+			),
+		),
+		"--tiny": (
+			pattern-config: (
+				responsive-type: true,
+				size: tiny,
+				type-style: text,
+			),
+		),
+		"--extra-tiny": (
+			pattern-config: (
+				responsive-type: true,
+				size: extra-tiny,
+				type-style: text,
+			),
+		),
+	),
+);
+
+// Initialize the %link placeholder class - http://thesassway.com/intermediate/understanding-placeholder-selectors
+@include construct($text-patterns);

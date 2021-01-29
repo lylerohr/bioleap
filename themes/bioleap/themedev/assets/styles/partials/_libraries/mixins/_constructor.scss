@@ -1,0 +1,43 @@
+/************************************
+
+	Cordial Framework
+	Component Constructor
+
+************************************/
+
+// constructor
+@mixin construct($map-master) {
+	$default-master: map-remove($map-master, pattern-config, elements, modifiers);
+	@include build-default-style($map-master, $default-master);
+	@include build-modifiers($map-master, $default-master);
+}
+
+@mixin build-default-style($map-master, $default-master) {
+	%#{map-get-deep($map-master, pattern-config, name)} {
+		@include pseudo-constructor($map-master); // creates all pseudo classes & elements if passed in $modifier
+		@include type-constructor($map-master);
+		@each $key, $value in $default-master {
+			#{$key}: #{$value};
+		}
+	}
+}
+
+@mixin build-modifiers($map-master, $default-master) {
+	@if map-has-keys($map-master, modifiers) {
+		$modifiers: map-get($map-master, modifiers); // generate map of modifier maps
+		@each $modkey, $modvalue in $modifiers { // get each modifier map
+			$modifier: map-get($modifiers, $modkey); // get all modifiers
+			$modifier: extend($default-master, $modifier); // adds default styles to modifier map
+			%#{map-get-deep($map-master, pattern-config, name)}#{$modkey} { // creates BEM modifier placeholder style
+				@include pseudo-constructor($modifier); // creates all pseudo classes & elements if passed
+				@include type-constructor($modifier); // create responsive type styles
+				@if map-has-key($modifier, pattern-config) { // check for pattern-config in modifier
+					$modifier: map-remove($modifier, pattern-config); // remove patern config before creating adding parameters to class
+				}
+				@each $key, $value in $modifier { // cycle through modifier map
+					#{$key}: #{$value};
+				}
+			}
+		}
+	}
+}

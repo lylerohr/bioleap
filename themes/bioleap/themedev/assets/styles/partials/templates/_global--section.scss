@@ -1,0 +1,39 @@
+.#{$pre}template__section {
+	@include make-row;
+	position: relative;
+	padding: 0 0 6rem 0;
+}
+
+
+.#{$pre}section {
+	padding: 0 0 6rem 0;
+	@include make-row;
+	position: relative;
+
+	@include respond-to(tablet) {
+		padding: 0 0 10rem 0;
+	}
+
+	@include respond-to(desktop) {
+		padding: 0 0 12rem 0;
+	}
+
+
+
+
+    &__inner {
+        @extend .container;
+    }
+
+	&--small-padding {
+		padding: 1rem 0 !important;
+	}
+
+	&--inner {
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+
+
+	@include clearfix;
+}

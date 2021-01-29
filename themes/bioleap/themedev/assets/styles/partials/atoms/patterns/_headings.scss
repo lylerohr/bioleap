@@ -1,0 +1,101 @@
+// HEADINGS PATTERNS
+
+// @extend %heading
+$heading-patterns: (
+	pattern-config: (
+		responsive-type: true,
+		size: base,
+		name: 'heading',
+		type-style: text,
+	),
+	display: block,
+	white-space: normal,
+	margin: 0 0 margin(base) 0,
+	padding: 0,
+	text-align: left,
+	font-family: font-family(display),
+	font-weight: 100,
+	color: color(gray),
+	vertical-align: inherit,
+	touch-action: auto,
+	cursor: inherit,
+	background-image: none,
+	background-color: color(clear),
+	border: none,
+	":hover": (),
+	":active": (),
+	"::before": (),
+	"::after": (),
+	modifiers: (
+		"--monolithic": (
+			pattern-config: (
+				responsive-type: true,
+				size: monolithic,
+				type-style: display,
+			),
+		),
+		"--massive": (
+			pattern-config: (
+				responsive-type: true,
+				size: massive,
+				type-style: display,
+			),
+			color: color(blue-middle),
+		),
+		"--extra-large": (
+			pattern-config: (
+				responsive-type: true,
+				size: extra-large,
+				type-style: display,
+			),
+		),
+		"--large": (
+			pattern-config: (
+				responsive-type: true,
+				size: large,
+				type-style: display,
+			),
+		),
+		"--base": (
+			pattern-config: (
+				responsive-type: true,
+				size: base,
+				type-style: display,
+			),
+		),
+		"--small": (
+			pattern-config: (
+				responsive-type: true,
+				size: small,
+				type-style: display,
+			),
+		),
+		"--extra-small": (
+			pattern-config: (
+				responsive-type: true,
+				size: extra-small,
+				type-style: display,
+			),
+		),
+		"--tiny": (
+			pattern-config: (
+				responsive-type: true,
+				size: tiny,
+				type-style: display,
+			),
+		),
+		"--extra-tiny": (
+			pattern-config: (
+				responsive-type: true,
+				size: extra-tiny,
+				type-style: display,
+			),
+		),
+		"--reverse": (
+			color: color(white),
+		),
+	),
+);
+
+// Initialize the %link placeholder class - http://thesassway.com/intermediate/understanding-placeholder-selectors
+@include construct($heading-patterns);

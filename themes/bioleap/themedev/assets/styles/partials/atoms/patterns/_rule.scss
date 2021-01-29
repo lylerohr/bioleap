@@ -1,0 +1,40 @@
+// RULE PATTERNS
+
+// @extend %rule
+$rule-patterns: (
+	pattern-config: (
+		responsive-type: true,
+		size: base,
+		name: 'rule',
+		type-style: text,
+	),
+	display: block,
+	white-space: normal,
+	margin: 0,
+	padding: 0,
+	text-align: center,
+	font-family: font-family(text),
+	color: color(white),
+	vertical-align: inherit,
+	touch-action: auto,
+	cursor: inherit,
+	background-image: none,
+	background-color: color(clear),
+	border: none,
+	":hover": (),
+	":active": (),
+	"::before": (),
+	"::after": (),
+	modifiers: (
+		"--test": (
+			pattern-config: (
+				responsive-type: true,
+				size: large,
+				type-style: text,
+			),
+		),
+	),
+);
+
+// Initialize the %constructor placeholder class - http://thesassway.com/intermediate/understanding-placeholder-selectors
+@include construct($rule-patterns);

@@ -1,0 +1,51 @@
+.#{$pre}grid {
+	@include make-row;
+
+	&-item--1 {
+		@include make-sm-column(1);
+	}
+
+	&-item--2 {
+		@include make-sm-column(2);
+	}
+
+	&-item--3 {
+		@include make-sm-column(3);
+	}
+
+	&-item--4 {
+		@include make-sm-column(4);
+	}
+
+	&-item--5 {
+		@include make-sm-column(5);
+	}
+
+	&-item--6 {
+		@include make-sm-column(6);
+	}
+
+	&-item--7 {
+		@include make-sm-column(7);
+	}
+
+	&-item--8 {
+		@include make-sm-column(8);
+	}
+
+	&-item--9 {
+		@include make-sm-column(9);
+	}
+
+	&-item--10 {
+		@include make-sm-column(10);
+	}
+
+	&-item--11 {
+		@include make-sm-column(11);
+	}
+
+	&-item--12 {
+		@include make-sm-column(12);
+	}
+}

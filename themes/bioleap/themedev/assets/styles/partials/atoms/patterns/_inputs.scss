@@ -1,0 +1,44 @@
+// INPUT PATTERNS
+
+// @extend %input
+$input-patterns: (
+	pattern-config: (
+		responsive-type: true,
+		size: base,
+		name: 'input',
+		type-style: text,
+	),
+	display: block,
+	white-space: normal,
+	margin: 0 0 margin(base) 0,
+	padding: .25rem,
+	width: 100%,
+	text-align: left,
+	font-family: font-family(text),
+	font-weight: 400,
+	color: color(gray),
+	vertical-align: inherit,
+	touch-action: auto,
+	cursor: inherit,
+	background-image: none,
+	background-color: color(clear),
+	border: border(hairline, brand-primary),
+	border-radius: radius(base),
+	outline: none,
+	":hover": (),
+	":active": (),
+	"::before": (),
+	"::after": (),
+	modifiers: (
+		"--test": (
+			pattern-config: (
+				responsive-type: true,
+				size: large,
+				type-style: text,
+			),
+		),
+	),
+);
+
+// Initialize the %input placeholder class - http://thesassway.com/intermediate/understanding-placeholder-selectors
+@include construct($input-patterns);
