@@ -790,6 +790,6 @@ $settings['config_sync_directory'] = 'sites/default/files/config_WYQKXA0yvwTrdvb
  * Keep this code block at the end of this file to take full effect.
  */
 #
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-   include $app_root . '/' . $site_path . '/settings.local.php';
-}
+// if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+//    include $app_root . '/' . $site_path . '/settings.local.php';
+// }
