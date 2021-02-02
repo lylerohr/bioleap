@@ -1,2 +1,2 @@
-
+$(document).ready(function(){$(".bl_product-slick").slick({slidesToShow:1,slidesToScroll:1,arrows:!1,fade:!0,infinite:!0,asNavFor:".bl_product-slick__nav"}),$(".bl_product-slick__nav").slick({slidesToShow:5,slidesToScroll:1,asNavFor:".bl_product-slick",focusOnSelect:!0,infinite:!0,centerMode:!0})});
 //# sourceMappingURL=scripts-min.js.map

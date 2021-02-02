@@ -143,6 +143,244 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/libraries/slick/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/libraries/slick/.gitignore",
+		"oF": 0
+		},
+	"/libraries/slick/bower.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/libraries/slick/bower-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/libraries/slick/component.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/libraries/slick/component-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/libraries/slick/CONTRIBUTING.markdown": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/libraries/slick/CONTRIBUTING.markdown",
+		"oF": 0
+		},
+	"/libraries/slick/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/libraries/slick/index.html",
+		"oF": 0
+		},
+	"/libraries/slick/ISSUE_TEMPLATE.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "/libraries/slick/ISSUE_TEMPLATE.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/libraries/slick/LICENSE": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/libraries/slick/LICENSE",
+		"oF": 0
+		},
+	"/libraries/slick/Makefile": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/libraries/slick/Makefile",
+		"oF": 0
+		},
+	"/libraries/slick/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/libraries/slick/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/libraries/slick/README.markdown": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/libraries/slick/README.markdown",
+		"oF": 0
+		},
+	"/libraries/slick/slick.jquery.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/libraries/slick/slick.jquery-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/libraries/slick/slick/ajax-loader.gif": {
+		"ft": 4194304,
+		"iS": 4178,
+		"oA": 0,
+		"oAP": "/libraries/slick/slick/ajax-loader.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/libraries/slick/slick/config.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/libraries/slick/slick/config.rb",
+		"oF": 0
+		},
+	"/libraries/slick/slick/fonts/slick.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/libraries/slick/slick/fonts/slick.eot",
+		"oF": 0
+		},
+	"/libraries/slick/slick/fonts/slick.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/libraries/slick/slick/fonts/slick.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/libraries/slick/slick/fonts/slick.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/libraries/slick/slick/fonts/slick.ttf",
+		"oF": 0
+		},
+	"/libraries/slick/slick/fonts/slick.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/libraries/slick/slick/fonts/slick.woff",
+		"oF": 0
+		},
+	"/libraries/slick/slick/slick-theme.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/libraries/slick/slick/slick-theme-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/libraries/slick/slick/slick-theme.less": {
+		"aP": 0,
+		"bl": 0,
+		"eJ": 0,
+		"ft": 1,
+		"ie": 0,
+		"iI": 0,
+		"ma": 1,
+		"mS": 0,
+		"oA": 0,
+		"oAP": "/libraries/slick/slick/slick-theme.css",
+		"oF": 0,
+		"oS": 0,
+		"rwU": 0,
+		"sI": 0,
+		"sU": 0
+		},
+	"/libraries/slick/slick/slick-theme.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/libraries/slick/slick/slick-theme.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/libraries/slick/slick/slick.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/libraries/slick/slick/slick-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/libraries/slick/slick/slick.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/libraries/slick/slick/slick-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/libraries/slick/slick/slick.less": {
+		"aP": 0,
+		"bl": 0,
+		"eJ": 0,
+		"ft": 1,
+		"ie": 0,
+		"iI": 0,
+		"ma": 1,
+		"mS": 0,
+		"oA": 0,
+		"oAP": "/libraries/slick/slick/slick.css",
+		"oF": 0,
+		"oS": 0,
+		"rwU": 0,
+		"sI": 0,
+		"sU": 0
+		},
+	"/libraries/slick/slick/slick.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/libraries/slick/slick/slick.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/libraries/slick/slick/slick.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/libraries/slick/slick/slick.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/scripts/scripts-min.js": {
 		"ft": 64,
 		"ma": 0,

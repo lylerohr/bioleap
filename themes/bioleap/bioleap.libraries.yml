@@ -3,7 +3,12 @@ global-css:
     css:
         theme:
             styles/app.css: {}
+            libraries/slick/slick/slick.css: {}
+            libraries/slick/slick/slick-theme.css: {}
 global-scripts:
     version: 1.x
     js:
         scripts/scripts.js: {}
+        libraries/slick/slick/slick.min.js: {}
+    dependencies:
+        - core/jquery

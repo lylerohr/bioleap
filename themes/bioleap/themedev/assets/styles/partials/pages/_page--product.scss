@@ -7,6 +7,31 @@
     // LEFT COLUMN
     .#{$pre}product-image-carousel {
         margin-bottom: layout(spacing--lg);
+        padding-right: layout(spacing--xl);
+    }
+
+    .#{$pre}product-slick {
+
+    }
+
+    .#{$pre}product-slick__nav {
+
+        .slick-list {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-left: layout(spacing--sm)*-1 !important;
+            margin-right: layout(spacing--sm)*-1 !important;
+            margin-top: layout(spacing--md);
+        }
+
+        &-item {
+            padding: 0 layout(spacing--sm);
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
     }
 
     .#{$pre}product-documents {
@@ -120,6 +145,7 @@
     }
 
     .#{$pre}product-additional {
+        margin-bottom: layout(spacing--xl);
 
         &__heading {
             @extend %heading--h7;
