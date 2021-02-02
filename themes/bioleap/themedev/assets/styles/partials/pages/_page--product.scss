@@ -60,7 +60,7 @@
     .#{$pre}product-title {
         @extend %heading--h4;
         margin-top: layout(spacing--md);
-        margin-bottom: layout(spacing--xs);
+        margin-bottom: layout(spacing--3xs);
         clear: both;
     }
 
@@ -169,6 +169,8 @@
 
         &__grid {
             display: flex;
+            margin-left: layout(spacing--sm) * -1;
+            margin-right: layout(spacing--sm) * -1;
 
             .#{$pre}product-card {
                 flex-basis: 33%;

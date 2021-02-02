@@ -32,6 +32,7 @@
         "drupal/paragraphs": "^1.12",
         "drupal/phpmailer_smtp": "^2.0",
         "drupal/search_api": "^1.18",
+        "drupal/slick": "^2.2",
         "drupal/swiftmailer": "^2.0",
         "drupal/vardumper": "^1.5",
         "drupal/views_infinite_scroll": "^1.7",
