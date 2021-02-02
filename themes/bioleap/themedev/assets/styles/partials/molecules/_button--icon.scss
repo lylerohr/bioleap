@@ -14,15 +14,15 @@
         }
     }
 
-    &--ghost-right {
-        @extend %button--ghost;
+    &--super-right {
+        @extend %button--super;
         .#{$pre}button__icon {
 
         }
     }
 
-    &--ghost-left {
-        @extend %button--ghost;
+    &--super-left {
+        @extend %button--super;
         .#{$pre}button__icon {
 
         }

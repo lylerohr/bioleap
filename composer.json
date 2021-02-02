@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^2.4",
+        "drupal/bamboo_twig": "^5.0",
         "drupal/blazy": "^2.1",
         "drupal/commerce": "^2.21",
         "drupal/commerce_wishlist": "^3.0-beta4",
@@ -39,7 +40,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "alpha",
     "prefer-stable": true,
     "config": {
         "sort-packages": true

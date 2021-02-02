@@ -4,7 +4,7 @@
 $rule-patterns: (
 	pattern-config: (
 		responsive-type: true,
-		size: base,
+		size: fs--base,
 		name: 'rule',
 		type-style: text,
 	),
@@ -29,12 +29,12 @@ $rule-patterns: (
 		"--test": (
 			pattern-config: (
 				responsive-type: true,
-				size: large,
+				size: fs--base,
 				type-style: text,
 			),
 		),
 	),
 );
 
-// Initialize the %constructor placeholder class - http://thesassway.com/intermediate/understanding-placeholder-selectors
+// Initialize the %rule placeholder class
 @include construct($rule-patterns);

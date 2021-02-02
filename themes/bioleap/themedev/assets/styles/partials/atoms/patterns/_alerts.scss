@@ -4,7 +4,7 @@
 $alert-patterns: (
 	pattern-config: (
 		responsive-type: true,
-		size: base,
+		size: fs--base,
 		name: 'alert',
 		type-style: text,
 	),
@@ -29,10 +29,12 @@ $alert-patterns: (
 		"--test": (
 			pattern-config: (
 				responsive-type: true,
-				size: large,
+				size: fs--12,
 				type-style: text,
 			),
 		),
 	),
 );
+
+// Initialize the %alert placeholder class
 @include construct($alert-patterns);

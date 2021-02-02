@@ -4,7 +4,7 @@
 $blockquote-patterns: (
 	pattern-config: (
 		responsive-type: true,
-		size: base,
+		size: fs--base,
 		name: 'blockquote',
 		type-style: text,
 	),
@@ -29,12 +29,12 @@ $blockquote-patterns: (
 		"--test": (
 			pattern-config: (
 				responsive-type: true,
-				size: large,
+				size: fs--12,
 				type-style: text,
 			),
 		),
 	),
 );
 
-// Initialize the %link placeholder class - http://thesassway.com/intermediate/understanding-placeholder-selectors
+// Initialize the %blockquote placeholder class
 @include construct($blockquote-patterns);

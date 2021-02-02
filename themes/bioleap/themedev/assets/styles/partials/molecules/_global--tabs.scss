@@ -8,11 +8,11 @@
     }
 
     .active {
-        background-color: color(brand-primary);
+        background-color: color(blue);
         color: color(gray);
 
         &:hover {
-            background-color: color(brand-primary, light);
+            background-color: color(blue, light);
             color: color(white);
         }
     }

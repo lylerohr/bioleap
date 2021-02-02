@@ -1,10 +1,16 @@
 button,
-.#{$pre}_button {
+.#{$pre}button {
+	@extend %button;
+
 	&--default {
 		@extend %button--default;
 	}
 
-	&--ghost {
-		@extend %button--ghost;
+	&--super {
+		@extend %button--super;
+	}
+
+	&--link {
+		@extend %button--link;
 	}
 }

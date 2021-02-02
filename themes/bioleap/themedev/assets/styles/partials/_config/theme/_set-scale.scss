@@ -8,7 +8,10 @@
 html {
 	font-size: $scale !important;
 	font-family: font-family(text) !important;
-	font-weight: normal;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 * { padding: 0; margin: 0; }

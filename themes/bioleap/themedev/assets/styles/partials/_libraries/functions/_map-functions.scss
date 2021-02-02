@@ -38,6 +38,13 @@
 	 }
 }
 
+@function layout($value) {
+	 @if map-has-key($layout, $value) {
+	 	@return map-get($layout, $value);
+	 } @else {
+		 @warn "No such spacing value - '#{$value}.";
+	 }
+}
 /*************************
 
 	MAP FUNCTIONS - THEME LAYER

@@ -1,8 +1,11 @@
 .#{$pre}surface {
     @extend .container;
+    display: flex;
 
     &__section {
         padding-bottom: 4rem;
+        width: 100%;
+        flex-basis: 100%;
 
         @include respond-to(tablet) {
             padding-bottom: 5rem;
@@ -10,6 +13,19 @@
 
         @include respond-to(desktop) {
             padding-bottom: 6rem;
+        }
+
+        &--50 {
+            width: 50%;
+            flex-basis: 50%;
+        }
+        &--33 {
+            width: 33%;
+            flex-basis: 33%;
+        }
+        &--64 {
+            width: 64%;
+            flex-basis: 64%;
         }
     }
 }

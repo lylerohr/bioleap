@@ -4,7 +4,7 @@
 $input-patterns: (
 	pattern-config: (
 		responsive-type: true,
-		size: base,
+		size: fs--base,
 		name: 'input',
 		type-style: text,
 	),
@@ -22,7 +22,7 @@ $input-patterns: (
 	cursor: inherit,
 	background-image: none,
 	background-color: color(clear),
-	border: border(hairline, brand-primary),
+	border: border(hairline, blue),
 	border-radius: radius(base),
 	outline: none,
 	":hover": (),
@@ -33,12 +33,12 @@ $input-patterns: (
 		"--test": (
 			pattern-config: (
 				responsive-type: true,
-				size: large,
+				size: fs--base,
 				type-style: text,
 			),
 		),
 	),
 );
 
-// Initialize the %input placeholder class - http://thesassway.com/intermediate/understanding-placeholder-selectors
+// Initialize the %input placeholder class
 @include construct($input-patterns);

@@ -1,3 +1,51 @@
 .#{$pre}footer {
-    
+    width: 100%;
+    background-color: color(blue-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: layout(spacing--2xl) layout(spacing--md);
+    text-align: center;
+    color: color(white);
+
+    &__logo {
+        width: 150px;
+        padding: 0 0 layout(spacing--xl) 0;
+    }
+
+    &__contact {
+        padding: 0 0 layout(spacing--lg) 0;
+    }
+
+    &__address {
+        padding-bottom: layout(spacing--2xs);
+    }
+
+    &__phone {
+
+    }
+
+    &__copyright {
+        padding: 0 0 layout(spacing--lg) 0;
+    }
+
+    &__social {
+        padding: 0 0 layout(spacing--lg) 0;
+        display: flex;
+    }
+
+    &__social-link {
+        padding: 0 layout(spacing--xs);
+    }
+
+    &__credentials {
+        padding: 0 0 layout(spacing--lg) 0;
+        display: flex;
+
+        img {
+            height: 60px;
+            flex-basis: 33%;
+            padding: 0 layout(spacing--xs);
+        }
+    }
 }

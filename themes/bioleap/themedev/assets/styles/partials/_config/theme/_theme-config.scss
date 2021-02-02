@@ -17,7 +17,8 @@ $pre: "bl_";
 $scale: 16px;
 
 // Height of Navigation Bar
-$nav-height: 4rem;
+$nav-height: 86px;
+$nav-height-collapsed: 56px;
 
 // @media breakpoints
 // Used in respond-to(<breakpoint>) and breakpoint(<breakpoint>)
@@ -38,12 +39,12 @@ $breakpoints: (
 
 // font-family($font);
 $font-stack: (
-	text--bold: #{Helvetica, sans-serif},
-	text--light: #{Helvetica, sans-serif},
-	text: #{Helvetica, sans-serif},
-	display: #{sans-serif},
+	text--bold: #{proxima nova, Verdana, Arial, sans-serif},
+	text--light: #{proxima nova, Verdana, Arial, sans-serif},
+	text: #{proxima-nova, Verdana, Arial, sans-serif},
+	display: #{proxima nova condensed, Verdana, Arial, sans-serif},
 	code: #{'courier', monospace},
-	icons: #{'Font Awesome 5\ Pro'},
+	//icons: #{'Font Awesome 5\ Pro'},
 	cd--text: #{'proxima nova', helvetica, arial, sans-serif},
 	cd--display: #{'proxima nova', sans-serif},
 	cd--code: #{courier, monospace},
@@ -53,15 +54,23 @@ $font-stack: (
 // unitless, DO NOT SET UNITS HERE
 // font-size($size);
 $font-sizes: (
-	monolithic: 2.3333,
-	massive: 1.6667,
-	extra-large: 1.3333,
-	large: 1.1111,
-	base: 1,
-	small: .8889,
-	extra-small: .75,
-	tiny: .7,
-	extra-tiny: .6,
+	fs--base: 1,
+	fs--0: 8,
+	fs--1: 5.75,
+	fs--2: 5.25,
+	fs--3: 4.25,
+	fs--4: 3.75,
+	fs--5: 3.375,
+	fs--6: 3,
+	fs--7: 2.625,
+	fs--8: 2.25,
+	fs--9: 2,
+	fs--10: 1.5,
+	fs--11: 1.25,
+	fs--12: 1.125,
+	fs--13: 1,
+	fs--14: .875,
+	fs--15: .75,
 );
 
 // MUST MATCH KEYS IN $breakpoints
@@ -100,12 +109,13 @@ $lh: (
 // Usage: color($color, <$tone> || 0-100, <$function>);
 
 $colors: (
-	brand-primary: rgba(16,56,122,1),
-	brand-secondary: rgba(12,130,199,1),
+	blue: #6e9eaf,
+	blue-dark: #495965,
+	orange: #f7921e,
 	alert: rgba(255,73,16,1),
-	text: rgba(0,0,0,1),
-	black: rgba(0,0,0,1),
-	gray: rgba(76,77,79,1),
+	text: #190b12,
+	black: #190b12,
+	gray: #eeeeee,
 	white: rgba(255,255,255,1),
 	clear: rgba(255,255,255,0),
 	drop-shadows: rgba(0,0,0,.1),
@@ -114,9 +124,9 @@ $colors: (
 
 // TODO - In progress
 //$gradients: (
-//	brand-primary: (
-//		start-color: color(brand-primary),
-//		end-color: color(brand-primary, 10, lighten),
+//	blue: (
+//		start-color: color(blue),
+//		end-color: color(blue, 10, lighten),
 //	),
 //);
 
@@ -156,6 +166,28 @@ $z-layers: (
 	Cadence
 
 ************************************/
+
+// layout() function
+$layout: (
+	spacing--3xs: .125rem,
+	spacing--2xs: .25rem,
+	spacing--xs: .5rem,
+	spacing--sm: .75rem,
+	spacing--md: 1rem,
+	spacing--lg: 1.5rem,
+	spacing--xl: 2rem,
+	spacing--2xl: 2.5rem,
+	spacing--3xl: 3rem,
+	layout--2xs: 1rem,
+	layout--xs: 2rem,
+	layout--sm: 4rem,
+	layout--md: 6rem,
+	layout--lg: 8rem,
+	layout--xl: 10rem,
+	layout--2xl: 12rem,
+	layout--3xl: 14rem,
+	layout--4xl: 18rem,
+);
 
 // margin() function
 $margin: (
@@ -210,7 +242,7 @@ $radius: (
 // transition($speed);
 $transitions: (
 	none: 0ms,
-	base: 150ms ease-in-out,
+	base: all 0.3s ease-in-out,
 	extra-fast: 50ms ease-in-out,
 	fast: 100ms ease-in-out,
 	slow: 300ms ease-in-out,

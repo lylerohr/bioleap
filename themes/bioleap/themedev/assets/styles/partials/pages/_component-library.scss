@@ -1,31 +1,31 @@
 .cd_heading {
     &--1 {
-        @extend %heading--monolithic;
+        @extend %heading--h1;
         font-family: font-family(cd--display) !important;
     }
 
     &--2 {
-        @extend %heading--massive;
+        @extend %heading--h2;
         font-family: font-family(cd--display) !important;
     }
 
     &--3 {
-        @extend %heading--extra-large;
+        @extend %heading--h3;
         font-family: font-family(cd--display) !important;
     }
 
     &--4 {
-        @extend %heading--large;
+        @extend %heading--h4;
         font-family: font-family(cd--display) !important;
     }
 
     &--5 {
-        @extend %heading--base;
+        @extend %heading--h5;
         font-family: font-family(cd--display) !important;
     }
 
     &--6 {
-        @extend %heading--small;
+        @extend %heading--h6;
         font-family: font-family(cd--display) !important;
     }
 
@@ -37,12 +37,12 @@
     font-family: font-family(cd--text);
 
     &--large {
-        @extend %text--large;
+        @extend %text;
         font-family: font-family(cd--text);
     }
 
     &--small {
-        @extend %text--small;
+        @extend %text;
         font-family: font-family(cd--text);
     }
 }
@@ -97,7 +97,7 @@
 
 		.cd_section--header {
 			height: 150px;
-			background-color: color(brand-primary);
+			background-color: color(blue);
 			position: relative;
 
 			.cd_page-title {
@@ -249,9 +249,9 @@
                     }
 
 					&.active {
-						color: color(brand-primary, 10, darken);
-						border-bottom: border(hairline, brand-primary);
-						border-top: border(hairline, brand-primary);
+						color: color(blue, 10, darken);
+						border-bottom: border(hairline, blue);
+						border-top: border(hairline, blue);
 					}
 				}
 			}
@@ -376,7 +376,7 @@
 			&__title {
 				@extend .cd_heading--6;
 				margin-bottom: margin(none);
-				color: color(brand-primary);
+				color: color(blue);
 			}
 
 			&__big-a {
@@ -434,7 +434,7 @@
     &__item {
         white-space: nowrap;
         margin-bottom: 1.5rem;
-        @include responsive-type(large, text);
+        @include responsive-type(fs--12, text);
     }
 }
 

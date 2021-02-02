@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '47f7587df835e2142065b1ff69804920743d5637',
+    'reference' => '7b32bf86f20ce52a6d413e2412ddfb306ff96cb7',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -188,6 +188,15 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/bamboo_twig' => 
+    array (
+      'pretty_version' => '5.0.0-alpha1',
+      'version' => '5.0.0.0-alpha1',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-5.0-alpha1',
     ),
     'drupal/ban' => 
     array (
@@ -829,7 +838,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '47f7587df835e2142065b1ff69804920743d5637',
+      'reference' => '7b32bf86f20ce52a6d413e2412ddfb306ff96cb7',
     ),
     'drupal/link' => 
     array (

@@ -11,36 +11,41 @@ h6 {
 	-webkit-margin-start: 0;
 	-webkit-margin-end: 0;
 	font-weight: normal;
-	@extend %heading;
 }
 
 h1,
-.#{$pre}heading--1 {
-	@extend %heading--monolithic;
+.#{$pre}heading--h1 {
+	@extend %heading;
+	@extend %heading--h1;
 }
 
 h2,
-.#{$pre}heading--2 {
-	@extend %heading--massive;
+.#{$pre}heading--h2 {
+	@extend %heading;
+	@extend %heading--h2;
 }
 
 h3,
-.#{$pre}heading--3 {
-	@extend %heading--extra-large;
+.#{$pre}heading--h3 {
+	@extend %heading;
+	@extend %heading--h3;
 }
 
 h4,
-.#{$pre}heading--4 {
-	@extend %heading--large;
+.#{$pre}heading--h4 {
+	@extend %heading;
+	@extend %heading--h4;
 }
 
 h5,
-.#{$pre}heading--5 {
-	@extend %heading--base;
+.#{$pre}heading--h4 {
+	@extend %heading;
+	@extend %heading--h4;
 	font-family: font-family(text--bold)
 }
 
 h6,
-.#{$pre}heading--6 {
-	@extend %heading--small;
+.#{$pre}heading--h6 {
+	@extend %heading;
+	@extend %heading--h6;
 }

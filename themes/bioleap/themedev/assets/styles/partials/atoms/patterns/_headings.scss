@@ -4,7 +4,7 @@
 $heading-patterns: (
 	pattern-config: (
 		responsive-type: true,
-		size: base,
+		size: fs--base,
 		name: 'heading',
 		type-style: text,
 	),
@@ -14,8 +14,8 @@ $heading-patterns: (
 	padding: 0,
 	text-align: left,
 	font-family: font-family(display),
-	font-weight: 100,
-	color: color(gray),
+	font-weight: 400,
+	color: color(black),
 	vertical-align: inherit,
 	touch-action: auto,
 	cursor: inherit,
@@ -27,75 +27,65 @@ $heading-patterns: (
 	"::before": (),
 	"::after": (),
 	modifiers: (
-		"--monolithic": (
+		"--h0": (
 			pattern-config: (
 				responsive-type: true,
-				size: monolithic,
+				size: fs--2,
 				type-style: display,
 			),
 		),
-		"--massive": (
+		"--h1": (
 			pattern-config: (
 				responsive-type: true,
-				size: massive,
+				size: fs--3,
 				type-style: display,
 			),
 			color: color(blue-middle),
 		),
-		"--extra-large": (
+		"--h2": (
 			pattern-config: (
 				responsive-type: true,
-				size: extra-large,
+				size: fs--4,
 				type-style: display,
 			),
 		),
-		"--large": (
+		"--h3": (
 			pattern-config: (
 				responsive-type: true,
-				size: large,
+				size: fs--6,
 				type-style: display,
 			),
 		),
-		"--base": (
+		"--h4": (
 			pattern-config: (
 				responsive-type: true,
-				size: base,
+				size: fs--7,
 				type-style: display,
 			),
 		),
-		"--small": (
+		"--h5": (
 			pattern-config: (
 				responsive-type: true,
-				size: small,
+				size: fs--8,
 				type-style: display,
 			),
 		),
-		"--extra-small": (
+		"--h6": (
 			pattern-config: (
 				responsive-type: true,
-				size: extra-small,
+				size: fs--9,
 				type-style: display,
 			),
 		),
-		"--tiny": (
+		"--h7": (
 			pattern-config: (
 				responsive-type: true,
-				size: tiny,
+				size: fs--11,
 				type-style: display,
 			),
-		),
-		"--extra-tiny": (
-			pattern-config: (
-				responsive-type: true,
-				size: extra-tiny,
-				type-style: display,
-			),
-		),
-		"--reverse": (
-			color: color(white),
 		),
 	),
 );
 
-// Initialize the %link placeholder class - http://thesassway.com/intermediate/understanding-placeholder-selectors
+// Initialize the %heading placeholder class
 @include construct($heading-patterns);

@@ -1,3 +1,72 @@
 .#{$pre}header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    height: $nav-height;
+    background-color: transparentize(white, .1);
+    z-index: 1000;
+
+    &__left {
+        width: 100%;
+        display: flex;
+    }
+
+    &__branding {
+        background-color: color(white);
+        padding: layout(spacing--md);
+        display: inline-block;
+        position: absolute;
+    }
+
+    &__logo {
+        width: 150px;
+    }
+
+    &__nav {
+        display: flex;
+        height: $nav-height;
+        margin-left: layout(layout--2xl);
+
+        &-item {
+            height: $nav-height;
+
+        }
+
+        &-link {
+            @include responsive-type(fs--14, display);
+            height: $nav-height;
+            padding: 0 layout(spacing--sm);
+            line-height: $nav-height;
+            display: inline-block;
+            color: color(black);
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+
+            &:hover {
+                background-color: color(blue);
+                color: color(white);
+
+            }
+        }
+    }
+
+    &__right {
+        width: 33%;
+        flex-basis: 33%;
+
+    }
+
+    &__actions {
+        float: right;
+
+        a {
+            height: $nav-height;
+            line-height: $nav-height;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
 
 }

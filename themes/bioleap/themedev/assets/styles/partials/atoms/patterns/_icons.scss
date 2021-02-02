@@ -4,7 +4,7 @@
 $icons: (
 	pattern-config: (
 		responsive-type: true,
-		size: base,
+		size: fs--base,
 		name: 'icon',
 		type-style: text,
 	),
@@ -29,12 +29,12 @@ $icons: (
 		"--test": (
 			pattern-config: (
 				responsive-type: true,
-				size: large,
+				size: fs--base,
 				type-style: text,
 			),
 		),
 	),
 );
 
-// Initialize the %link placeholder class - http://thesassway.com/intermediate/understanding-placeholder-selectors
+// Initialize the %icons placeholder class
 @include construct($icons);

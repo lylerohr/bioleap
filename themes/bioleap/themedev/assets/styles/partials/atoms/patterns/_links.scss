@@ -4,7 +4,7 @@
 $link-patterns: (
 	pattern-config: (
 		responsive-type: true,
-		size: base,
+		size: fs--base,
 		name: 'link',
 		type-style: text,
 	),
@@ -14,7 +14,7 @@ $link-patterns: (
 	padding: 0,
 	text-align: inherit,
 	font-family: font-family(text),
-	color: color(brand-primary),
+	color: color(blue),
 	text-decoration: none,
 	vertical-align: inherit,
 	touch-action: auto,
@@ -26,12 +26,12 @@ $link-patterns: (
 	":hover": (
 		background-color: color(clear),
 		text-decoration: none,
-		color: color(brand-primary),
+		color: color(blue-dark),
 		border: none,
 	),
 	":active": (
 		background-color: color(clear),
-		color: color(brand-primary),
+		color: color(blue-dark),
 		outline: none
 	),
 	"::before": (),
@@ -40,18 +40,18 @@ $link-patterns: (
 		"--inline": (
 			pattern-config: (
 				responsive-type: true,
-				size: base,
+				size: fs--base,
 				type-style: text,
 			),
-			color: color(brand-primary),
+			color: color(blue),
 			text-decoration: underline,
 			":hover": (
-				color: color(brand-primary, extra-dark),
+				color: color(blue, extra-dark),
 				text-decoration: underline,
 			),
 		),
 	),
 );
 
-// Initialize the %link placeholder class - http://thesassway.com/intermediate/understanding-placeholder-selectors
+// Initialize the %link placeholder class
 @include construct($link-patterns);

@@ -1,0 +1,42 @@
+<div class="bl_product-catalog-page">
+
+    <header class="bl_header" role="banner">
+        {{ page.header }}
+    </header>
+
+    <div class="bl_template">
+        {{ page.masthead }}
+    </div>
+
+    <div class="bl_template">
+        <div class="bl_template__section">
+            <div class="bl_surface">
+
+                <div class="bl_surface__section bl_surface__section--33 ">
+                    {{page.content.bioleap_product_catalog_search}}
+                    {{ page.content.bioleap_format }}
+                    {{ page.content.bioleap_animal }}
+                    {{ page.content.bioleap_gradelevel }}
+                    {{ page.content.bioleap_manufacturer }}
+                </div>
+                <div class="bl_surface__section bl_surface__section--64 ">
+                    {{ page.content.bioleap_content }}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bl_template">
+        {{ page.footer }}
+    </div>
+
+    <div style="z-index: 99999; position: fixed; bottom: 0; left: 0; width: 100%; padding: 15px; background-color:rgba(255,100,100,.9);">
+    <ol>
+        {% for key, value in node %}
+        <li>{{ key }}</li>
+        {% endfor %}
+    </ol>
+</div>
+
+</div>{# /.layout-container #}
