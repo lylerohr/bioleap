@@ -1,8 +1,13 @@
-.#{$pre}surface {
+.#{$pre}surface  {
     @extend .container;
     display: flex;
 
-    &__section {
+    #block-bioleap-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .#{$pre}surface__section {
         padding-bottom: 4rem;
         width: 100%;
         flex-basis: 100%;
@@ -15,17 +20,36 @@
             padding-bottom: 6rem;
         }
 
+        &--100 {
+            width: 100%;
+            flex-basis: 100%;
+            padding: 0 layout(spacing--sm);
+        }
+
         &--50 {
             width: 50%;
             flex-basis: 50%;
+            padding: 0 layout(spacing--sm);
         }
         &--33 {
             width: 33%;
             flex-basis: 33%;
+            padding: 0 layout(spacing--sm);
         }
         &--64 {
             width: 64%;
             flex-basis: 64%;
+            padding: 0 layout(spacing--sm);
+        }
+        &--25 {
+            width: 25%;
+            flex-basis: 25%;
+            padding: 0 layout(spacing--sm);
+        }
+        &--75 {
+            width: 75%;
+            flex-basis: 75%;
+            padding: 0 layout(spacing--sm);
         }
     }
 }

@@ -1,0 +1,22 @@
+.#{$pre}wishlist {
+
+    &__heading {
+        @extend %heading--h3;
+    }
+
+    &__share {
+
+        &::before {
+            font-family: "Font Awesome 5 Pro";
+            content: '\f0e0';
+            font-size: rem(font-size(fs--13));
+            color: color(orange);
+            padding-right: layout(spacing--xs);
+        }
+
+    }
+
+    &__grid {
+        border-top: border(hairline, blue);
+    }
+}

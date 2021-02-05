@@ -1,13 +1,12 @@
 .#{$pre}product-page {
 
     &__content {
-        padding-top: layout(layout--2xl) !important;
+        //padding-top: layout(layout--2xl) !important;
     }
 
     // LEFT COLUMN
     .#{$pre}product-image-carousel {
         margin-bottom: layout(spacing--lg);
-        padding-right: layout(spacing--xl);
     }
 
     .#{$pre}product-slick {
@@ -188,6 +187,7 @@
     }
 
     .#{$pre}related-products {
+        margin-top: layout(layout--md);
 
         &__heading {
             @extend %heading--h4;

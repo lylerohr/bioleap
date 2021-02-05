@@ -1,0 +1,147 @@
+.#{$pre}product-catalog {
+    padding-top: layout(layout--md) !important;
+
+    &__header {
+        margin-bottom: layout(spacing--lg);
+        padding-right: layout(spacing--lg);
+    }
+
+    &__heading {
+        @extend %heading--h5;
+    }
+
+    .#{$pre}search-form {
+        margin-right: layout(spacing--md);
+        position: relative;
+        flex-basis: 50%;
+
+        input[type="text"] {
+            border: none;
+            border-bottom: border(hairline, black);
+            outline: none;
+            padding: layout(spacing--sm);
+            transition: transition(fast);
+            font-family: font-family(text);
+            font-size: rem(font-size(fs--13));
+            color: color(black);
+            width: 100%;
+
+            &:focus {
+                outline: none;
+                background-color: color(gray);
+            }
+        }
+
+        input[type="submit"], a {
+            @extend %button;
+            @extend %button--default;
+            padding: layout(spacing--xs) layout(spacing--sm);
+            outline: none;
+        }
+
+        &__submit {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .#{$pre}my-list-link {
+        @include responsive-type(fs--11, text);
+        display: block;
+        padding: 5px layout(spacing--sm);
+        border: border(hairline, clear);
+
+        &:hover {
+            background-color: color(blue-dark);
+            color: color(white);
+        }
+
+        &::before {
+            font-family: "Font Awesome 5 Pro";
+            content: '\f005';
+            font-size: rem(font-size(fs--11));
+            color: color(orange);
+            padding-right: layout(spacing--xs);
+        }
+    }
+
+    .#{$pre}catalog-filters {
+
+        &__heading {
+            @extend %heading--h6;
+        }
+    }
+
+    .#{$pre}filter-group {
+        margin-bottom: layout(spacing--lg);
+
+        &__name {
+            @extend %heading--h7;
+            padding-left: layout(spacing--md);
+            padding-bottom: layout(spacing--xs);
+            margin-bottom: layout(spacing--sm);
+            border-bottom: border(hairline, blue);
+            position: relative;
+            cursor: pointer;
+
+            &::after  {
+                content: "\f068";
+                position: absolute;
+                right: layout(spacing--md);
+                top: 50%;
+                transform: translateY(-50%);
+                font-family: "Font Awesome 5 Pro";
+                font-size: rem(font-size(fs--13));
+            }
+
+            &.collapsed {
+                &::after {
+                    content: "\f067";
+                }
+            }
+        }
+
+        a {
+            display: inline-block;
+            padding: layout(spacing--3xs) layout(spacing--md);
+
+            &:hover {
+                background-color: color(gray);
+            }
+        }
+
+        .#{$pre}filter-group {
+            margin-bottom: layout(spacing--xs);
+        }
+
+        .facet-item--expanded .#{$pre}filter-group .#{$pre}filter-group__list {
+            margin-bottom: layout(spacing--xs);
+
+            li {
+                position: relative;
+            }
+
+            li::before {
+                content: "- ";
+                color: color(blue);
+                position: relative;
+                left: layout(spacing--md);
+            }
+
+            a {
+                padding-left: layout(spacing--lg);
+            }
+        }
+    }
+
+    .#{$pre}product-grid {
+        display: flex;
+        flex-wrap: wrap;
+
+        .#{$pre}product-card {
+            flex-basis: 33%;
+        }
+    }
+}

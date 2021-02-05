@@ -1,0 +1,28 @@
+<article{{ attributes }}>
+<div class="bl_wishlist-card">
+    <div class="bl_wishlist-card__image-container">
+        <a class="bl_wishlist-card__image"href="#">
+            {{product.field_prod__featured_image.0}}
+        </a>
+    </div>
+    <div class="bl_wishlist-card__info">
+        <a class="bl_wishlist-card__title" href="#">{{product.title.0}}</a>
+        <p class="bl_wishlist-card__manufacturer">{{product.field_prod__manufacturer.0}}</p>
+        <div class="bl_wishlist-card__description">{{product.body.0}}</div>
+    </div>
+    <dl class="bl_wishlist-card__attributes">
+        <dt class="bl_wishlist-card__term">Format:</dt>
+        <dd class="bl_wishlist-card__name">{{product.field_prod__format.0}}</dd>
+        <dt class="bl_wishlist-card__term">Animal:</dt>
+        <dd class="bl_wishlist-card__name">{{product.field_prod__animal.0}}</dd>
+        <dt class="bl_wishlist-card__term">Grade Level:</dt>
+        <dd class="bl_wishlist-card__name">{{product.field_prod__grade.0}}</dd>
+        <dt class="bl_wishlist-card__term">List Price:</dt>
+        <dd class="bl_wishlist-card__name list-price">{{product.field_prod__price_info.0}}</dd>
+    </dl>
+    <div class="bl_wishlist-card__actions">
+        <a class="bl_wishlist-card__actions-where-to-buy" href="field_prod__buy_url">Where to Buy</a>
+        <a class="bl_wishlist-card__actions-remove " href="#">Remove</a>
+    </div>
+</div>
+</article>

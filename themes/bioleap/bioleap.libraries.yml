@@ -8,7 +8,7 @@ global-css:
 global-scripts:
     version: 1.x
     js:
-        scripts/scripts.js: {}
         libraries/slick/slick/slick.min.js: {}
+        scripts/scripts-min.js: {}
     dependencies:
         - core/jquery

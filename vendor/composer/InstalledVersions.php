@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '7c55712c60b01c01f22f9753dd76e458fa98f4e7',
+    'reference' => '31eb61e5b41e585b98da549c37e56e589b470083',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -838,7 +838,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '7c55712c60b01c01f22f9753dd76e458fa98f4e7',
+      'reference' => '31eb61e5b41e585b98da549c37e56e589b470083',
     ),
     'drupal/link' => 
     array (
@@ -1179,6 +1179,15 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/twig_vardumper' => 
+    array (
+      'pretty_version' => '3.0.2',
+      'version' => '3.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3.0.2',
     ),
     'drupal/update' => 
     array (

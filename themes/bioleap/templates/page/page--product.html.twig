@@ -1,31 +1,6 @@
-
-
-<header class="bl_header" role="banner">
+<div class="bl_product-page">
     {{ page.header }}
-</header>
-
-<div class="bl_template">
     {{ page.masthead }}
-</div>
-
-<div class="bl_template bl_product-page">
-    <div class="bl_template__section">
-        <div class="bl_surface">
-            {{ page.content }}
-        </div>
-    </div>
-</div>
-
-<div class="bl_template">
+    {{ page.content }}
     {{ page.footer }}
 </div>
-
-    <div style="z-index: 99999; position: fixed; bottom: 0; left: 0; width: 100%; padding: 15px; background-color:rgba(255,100,100,.9);">
-    <ol>
-        {% for key, value in product %}
-        <li>{{ key }}</li>
-        {% endfor %}
-    </ol>
-</div>
-
-{# /.layout-container #}

@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="../../styles/app.css">
-        <title>Product Page</title>
+        <title>Product Catalog</title>
 	</head>
     <body>
 		<div class="bl_header">
@@ -34,18 +34,120 @@
         <div class="bl_masthead">
             <img src="../../images/slide-dog2.jpg" alt="">
         </div>
-        <div class="bl_template">
+        <div class="bl_template bl_product-catalog">
             <div class="bl_template__section">
 
 				<div class="bl_surface">
-					<div class="bl_surface__section--33">
+					<div class="bl_surface__section--100">
+						<div class="bl_product-catalog__header bl_control-bar">
+							<div class="bl_control-bar__left">
+								<h1 class="bl_product-catalog__heading">Dissection Alternatives Products</h1>
+							</div>
+							<div class="bl_control-bar__right">
 
+								<a class="bl_my-list-link bl_control-bar__item-right" href="#">My List</a>
+								<div class="bl_search-form bl_control-bar__item-right">
+									<input type="text" name="" value="" placeholder="search products...">
+									<a class="bl_search-form__submit" href="#"><span class="fas fa-search"></span></a>
+									<!--<input type="submit" name="" value="Search">-->
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="bl_surface__section--25">
+						<div class="bl_catalog-filters">
+							<h4 class="bl_catalog-filters__heading">Filters</h4>
+
+							<div class="bl_filter-group">
+								<h6 class="bl_filter-group__name expanded">Format</h6>
+								<ul class="bl_filter-group__list">
+									<li class="bl_filter-group__item">
+										<a class="bl_filter-group__link" href="#">
+											<span class="bl_filter-group__item-value">Digital</span>
+											<span class="bl_filter-group__item-count">(132)</span>
+										</a>
+										<ul class="bl_filter-group__item-children">
+											<li class="bl_filter-group__item">
+												<a class="bl_filter-group__link" href="#">
+													<span class="bl_filter-group__item-value">Online / Web Application</span>
+													<span class="bl_filter-group__item-count">(2)</span>
+												</a>
+											</li>
+											<li class="bl_filter-group__item">
+												<a class="bl_filter-group__link" href="#">
+													<span class="bl_filter-group__item-value">Mobile Application</span>
+													<span class="bl_filter-group__item-count">(2)</span>
+												</a>
+											</li>
+											<li class="bl_filter-group__item">
+												<a class="bl_filter-group__link" href="#">
+													<span class="bl_filter-group__item-value">Software Application</span>
+													<span class="bl_filter-group__item-count">(2)</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="bl_filter-group__item">
+										<a class="bl_filter-group__link" href="#">
+											<span class="bl_filter-group__item-value">Multi-Format</span>
+											<span class="bl_filter-group__item-count">(17)</span>
+										</a>
+									</li>
+									<li class="bl_filter-group__item">
+										<a class="bl_filter-group__link" href="#">
+											<span class="bl_filter-group__item-value">Physical Model</span>
+											<span class="bl_filter-group__item-count">(58)</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="bl_filter-group">
+								<h6 class="bl_filter-group__name expanded">Animal</h6>
+								<ul class="bl_filter-group__list">
+									<li class="bl_filter-group__item">
+										<a class="bl_filter-group__link" href="#">
+											<span class="bl_filter-group__item-value">Bird</span>
+											<span class="bl_filter-group__item-count">(132)</span>
+										</a>
+									</li>
+									<li class="bl_filter-group__item">
+										<a class="bl_filter-group__link" href="#">
+											<span class="bl_filter-group__item-value">Cat</span>
+											<span class="bl_filter-group__item-count">(17)</span>
+										</a>
+									</li>
+									<li class="bl_filter-group__item">
+										<a class="bl_filter-group__link" href="#">
+											<span class="bl_filter-group__item-value">Chicken</span>
+											<span class="bl_filter-group__item-count">(58)</span>
+										</a>
+									</li>
+									<li class="bl_filter-group__item">
+										<a class="bl_filter-group__link" href="#">
+											<span class="bl_filter-group__item-value">Clam</span>
+											<span class="bl_filter-group__item-count">(58)</span>
+										</a>
+									</li>
+									<li class="bl_filter-group__item">
+										<a class="bl_filter-group__link" href="#">
+											<span class="bl_filter-group__item-value">Crayfish</span>
+											<span class="bl_filter-group__item-count">(58)</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
                     </div>
-					<div class="bl_surface__section--64">
+					<div class="bl_surface__section--75">
 						<div class="bl_product-grid">
 							<div class="bl_product-card">
-								<img class="bl_product-card__image" src="http://placehold.it/512" alt="">
-								<h4 class="bl_product-card__title">Product Name</h4>
+								<div class="bl_product-card__image-container">
+									<a href="#">
+										<img class="bl_product-card__image" src="https://placeimg.com/512/384/animals" alt="">
+									</a>
+								</div>
+								<h4 class="bl_product-card__title"><a href="#">Product Name</a></h4>
 								<dl class="bl_product-card__attributes">
 									<dt class="bl_product-card__term">Format:</dt>
 									<dd class="bl_product-card__name">Physical Model</dd>
@@ -54,8 +156,12 @@
 								</dl>
 							</div>
 							<div class="bl_product-card">
-								<img class="bl_product-card__image" src="http://placehold.it/512" alt="">
-								<h4 class="bl_product-card__title">Product Name</h4>
+								<div class="bl_product-card__image-container">
+									<a href="#">
+										<img class="bl_product-card__image" src="https://placeimg.com/512/384/arch" alt="">
+									</a>
+								</div>
+								<h4 class="bl_product-card__title"><a href="#">Product Name</a></h4>
 								<dl class="bl_product-card__attributes">
 									<dt class="bl_product-card__term">Format:</dt>
 									<dd class="bl_product-card__name">Physical Model</dd>
@@ -64,8 +170,12 @@
 								</dl>
 							</div>
 							<div class="bl_product-card">
-								<img class="bl_product-card__image" src="http://placehold.it/512" alt="">
-								<h4 class="bl_product-card__title">Product Name</h4>
+								<div class="bl_product-card__image-container">
+									<a href="#">
+										<img class="bl_product-card__image" src="https://placeimg.com/512/384/nature" alt="">
+									</a>
+								</div>
+								<h4 class="bl_product-card__title"><a href="#">Product Name</a></h4>
 								<dl class="bl_product-card__attributes">
 									<dt class="bl_product-card__term">Format:</dt>
 									<dd class="bl_product-card__name">Physical Model</dd>
@@ -74,8 +184,12 @@
 								</dl>
 							</div>
 							<div class="bl_product-card">
-								<img class="bl_product-card__image" src="http://placehold.it/512" alt="">
-								<h4 class="bl_product-card__title">Product Name</h4>
+								<div class="bl_product-card__image-container">
+									<a href="#">
+										<img class="bl_product-card__image" src="https://placeimg.com/512/384/animals" alt="">
+									</a>
+								</div>
+								<h4 class="bl_product-card__title"><a href="#">Product Name</a></h4>
 								<dl class="bl_product-card__attributes">
 									<dt class="bl_product-card__term">Format:</dt>
 									<dd class="bl_product-card__name">Physical Model</dd>
@@ -84,8 +198,12 @@
 								</dl>
 							</div>
 							<div class="bl_product-card">
-								<img class="bl_product-card__image" src="http://placehold.it/512" alt="">
-								<h4 class="bl_product-card__title">Product Name</h4>
+								<div class="bl_product-card__image-container">
+									<a href="#">
+										<img class="bl_product-card__image" src="https://placeimg.com/512/384/arch" alt="">
+									</a>
+								</div>
+								<h4 class="bl_product-card__title"><a href="#">Product Name</a></h4>
 								<dl class="bl_product-card__attributes">
 									<dt class="bl_product-card__term">Format:</dt>
 									<dd class="bl_product-card__name">Physical Model</dd>
@@ -94,16 +212,62 @@
 								</dl>
 							</div>
 							<div class="bl_product-card">
-							<img class="bl_product-card__image" src="http://placehold.it/512" alt="">
-							<h4 class="bl_product-card__title">Product Name</h4>
-							<dl class="bl_product-card__attributes">
-								<dt class="bl_product-card__term">Format:</dt>
-								<dd class="bl_product-card__name">Physical Model</dd>
-								<dt class="bl_product-card__term">Grade Level:</dt>
-								<dd class="bl_product-card__name">6-8</dd>
-							</dl>
-						</div>
-						</div>
+								<div class="bl_product-card__image-container">
+									<a href="#">
+										<img class="bl_product-card__image" src="https://placeimg.com/512/384/nature" alt="">
+									</a>
+								</div>
+								<h4 class="bl_product-card__title"><a href="#">Product Name</a></h4>
+								<dl class="bl_product-card__attributes">
+									<dt class="bl_product-card__term">Format:</dt>
+									<dd class="bl_product-card__name">Physical Model</dd>
+									<dt class="bl_product-card__term">Grade Level:</dt>
+									<dd class="bl_product-card__name">6-8</dd>
+								</dl>
+							</div>
+							<div class="bl_product-card">
+								<div class="bl_product-card__image-container">
+									<a href="#">
+										<img class="bl_product-card__image" src="https://placeimg.com/512/384/animals" alt="">
+									</a>
+								</div>
+								<h4 class="bl_product-card__title"><a href="#">Product Name</a></h4>
+								<dl class="bl_product-card__attributes">
+									<dt class="bl_product-card__term">Format:</dt>
+									<dd class="bl_product-card__name">Physical Model</dd>
+									<dt class="bl_product-card__term">Grade Level:</dt>
+									<dd class="bl_product-card__name">6-8</dd>
+								</dl>
+							</div>
+							<div class="bl_product-card">
+								<div class="bl_product-card__image-container">
+									<a href="#">
+										<img class="bl_product-card__image" src="https://placeimg.com/512/384/arch" alt="">
+									</a>
+								</div>
+								<h4 class="bl_product-card__title"><a href="#">Product Name</a></h4>
+								<dl class="bl_product-card__attributes">
+									<dt class="bl_product-card__term">Format:</dt>
+									<dd class="bl_product-card__name">Physical Model</dd>
+									<dt class="bl_product-card__term">Grade Level:</dt>
+									<dd class="bl_product-card__name">6-8</dd>
+								</dl>
+							</div>
+							<div class="bl_product-card">
+								<div class="bl_product-card__image-container">
+									<a href="#">
+										<img class="bl_product-card__image" src="https://placeimg.com/512/384/nature" alt="">
+									</a>
+								</div>
+								<h4 class="bl_product-card__title"><a href="#">Product Name</a></h4>
+								<dl class="bl_product-card__attributes">
+									<dt class="bl_product-card__term">Format:</dt>
+									<dd class="bl_product-card__name">Physical Model</dd>
+									<dt class="bl_product-card__term">Grade Level:</dt>
+									<dd class="bl_product-card__name">6-8</dd>
+								</dl>
+							</div>
+                        </div>
                     </div>
 				</div>
             </div>

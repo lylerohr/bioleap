@@ -5,8 +5,9 @@
     height: $nav-height;
     background-color: transparentize(white, .1);
     z-index: 1000;
+    transition: transition(base);
 
-    &__left {
+    #block-bioleap-main-menu {
         width: 100%;
         display: flex;
     }
@@ -20,19 +21,21 @@
 
     &__logo {
         width: 150px;
+        transition: transition(base);
     }
 
     &__nav {
         display: flex;
         height: $nav-height;
         margin-left: layout(layout--2xl);
+        transition: transition(base);
 
         &-item {
             height: $nav-height;
 
         }
 
-        &-link {
+        a {
             @include responsive-type(fs--14, display);
             height: $nav-height;
             padding: 0 layout(spacing--sm);
@@ -42,7 +45,7 @@
             text-transform: uppercase;
             font-weight: 600;
             letter-spacing: 1px;
-
+            outline: none;
             &:hover {
                 background-color: color(blue);
                 color: color(white);
@@ -51,16 +54,31 @@
         }
     }
 
-    &__right {
+    #block-ctamenu {
         width: 33%;
         flex-basis: 33%;
-
     }
 
-    &__actions {
+    .#{$pre}header__actions {
         float: right;
 
-        a {
+        ul {
+            display: flex;
+        }
+
+        ul li a {
+            @extend %button;
+            @extend %button--default;
+        }
+
+        ul li:last-child a {
+            @extend %button;
+            @extend %button--super;
+        }
+
+        ul li a,
+        ul li:first-child a,
+        ul li:last-child a {
             height: $nav-height;
             line-height: $nav-height;
             padding-top: 0;
@@ -68,5 +86,39 @@
         }
     }
 
+    &.squished {
+        height: $nav-height-squished;
+        transition: transition(base);
+
+        .#{$pre}header__logo {
+            width: 92px;
+            transition: transition(base);
+        }
+
+        .#{$pre}header__nav {
+            height: $nav-height-squished;
+            margin-left: layout(layout--lg);
+            transition: transition(base);
+
+            &-item {
+                height: $nav-height-squished;
+
+            }
+
+            a {
+                height: $nav-height-squished;
+                line-height: $nav-height-squished;
+            }
+        }
+
+        .#{$pre}header__actions {
+            ul li a,
+            ul li:first-child a,
+            ul li:last-child a {
+                height: $nav-height-squished;
+                line-height: $nav-height-squished;
+            }
+        }
+    }
 
 }

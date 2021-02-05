@@ -1,6 +1,16 @@
-$(document).ready( function() {
+jQuery(document).ready( function() {
 
-    $('.bl_product-slick').slick({
+    jQuery(window).scroll(function() {
+        var scroll = jQuery(window).scrollTop();
+
+        if (scroll >= 1) {
+            jQuery(".bl_header").addClass("squished");
+        } else {
+            jQuery(".bl_header").removeClass("squished");
+        }
+    });
+
+    jQuery('.bl_product-slick').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
@@ -9,7 +19,7 @@ $(document).ready( function() {
         asNavFor: '.bl_product-slick__nav',
     });
 
-    $('.bl_product-slick__nav').slick({
+    jQuery('.bl_product-slick__nav').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '.bl_product-slick',
@@ -17,4 +27,6 @@ $(document).ready( function() {
         infinite: true,
         centerMode: true
     });
+
+
 });

@@ -1,14 +1,26 @@
-/*
-@font-face {
-    font-family: 'apercu';
-    src: url('../fonts/apercu-light.eot');
-    src: url('../fonts/apercu-light.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/apercu-light.woff') format('woff'),
-         url('../fonts/apercu-light.woff2') format('woff2'),
-         url('../fonts/apercu-light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-*/
+/*!
+ * Font Awesome Pro 5.15.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
 
-// @import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,700');
+$fa-uri: "../themedev/assets/fonts/icon-fonts/fontawesome/";
+
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("#{$fa-uri}fa-solid-900.eot");
+  src: url("#{$fa-uri}fa-solid-900.eot?#iefix") format("embedded-opentype"),
+       url("#{$fa-uri}fa-solid-900.woff2") format("woff2"),
+       url("#{$fa-uri}fa-solid-900.woff") format("woff"),
+       url("#{$fa-uri}fa-solid-900.ttf") format("truetype"),
+       url("#{$fa-uri}fa-solid-900.svg#fontawesome") format("svg"); }
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900; }
+
+
+@import "icons";

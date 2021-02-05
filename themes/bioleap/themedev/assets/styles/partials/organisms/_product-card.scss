@@ -1,0 +1,47 @@
+.#{$pre}product-card {
+    padding: layout(spacing--sm);
+    transition: transition(base);
+
+    &:hover {
+        transition: transition(base);
+        background-color: color(gray);
+    }
+
+    &__image-container {
+        border-bottom: solid 8px color(blue);
+        margin-bottom: layout(spacing--sm);
+    }
+
+    &__image img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__title a {
+        @extend %heading--h7;
+        color: color(blue);
+        margin-bottom: layout(spacing--sm);
+
+        &:hover {
+            color: color(blue-dark);
+            cursor: pointer;
+        }
+    }
+
+    &__attributes {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: layout(spacing--xl);
+        @include responsive-type(fs--14, text);
+    }
+
+    &__term {
+        flex-basis: 33%;
+        font-weight: 600;
+    }
+
+    &__name {
+        flex-basis: 64%;
+        margin-bottom: layout(spacing--2xs);
+    }
+}
