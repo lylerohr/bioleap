@@ -1,0 +1,88 @@
+.#{$pre}search-form {
+    //margin-right: layout(spacing--md);
+    margin-bottom: layout(spacing--lg);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    #views-exposed-form-product-catalog-page-1 {
+        display: flex;
+        flex-basis: 100%;
+
+        // Search text field
+        .form-item-product-search {
+            margin-right: layout(spacing--sm);
+            position: relative;
+            flex-basis: 100%;
+
+            label {
+                display: none;
+            }
+
+            input[type="text"] {
+                border: none;
+                border-bottom: border(hairline, blue);
+                outline: none;
+                padding: layout(spacing--sm);
+                transition: transition(fast);
+                font-family: font-family(text);
+                @include responsive-type(fs--11, display);
+                color: darken(color(gray), 70);
+                width: 100%;
+
+                &::placeholder {
+                    @include responsive-type(fs--11, display);
+                    font-style: italic;
+                    color: darken(color(gray), 50);
+                }
+
+                &:focus {
+                    outline: none;
+                    background-color: color(gray);
+                    z-index: 3;
+                }
+
+                &:active {
+                    background-color: color(gray);
+                    z-index: 3;
+                }
+
+
+            }
+        }
+
+        // Search Items per page dropdown
+        .form-item-items-per-page {
+            flex-basis: 15%;
+
+            label {
+                font-size: rem(font-size(fs--15));
+
+            }
+
+            select {
+                margin-top: layout(spacing--2xs);
+                padding: layout(spacing--2xs);
+            }
+        }
+
+        // Search Submit button
+        #edit-actions--2 {
+            text-align: right;
+
+            input[type="submit"], a {
+                @extend %button;
+                @extend %button--default;
+                padding: layout(spacing--sm);
+                outline: none;
+            }
+
+            &__submit {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

@@ -28,5 +28,34 @@ jQuery(document).ready( function() {
         centerMode: true
     });
 
+    jQuery(".bl_filter-group__name").click( function() {
+        jQuery(this).parent().toggleClass("collapse");
+    });
 
 });
+
+function showModal(refID) {
+    var modalID = refID.id.toString();
+    var modal = document.getElementById(modalID);
+    console.log(modal);
+    modal.classList.add('show');
+}
+
+function hideModal(refID) {
+    var modalID = refID.id.toString();
+    var modal = document.getElementById(modalID);
+    modal.classList.remove('show');
+}
+
+function removeWishlistItem(el) {
+    var currentEl = el.parentElement.parentElement.parentElement.parentElement.parentElement.getAttribute("data-drupal-selector");
+    var btnID = currentEl.substr(11,1);
+    var idstart = "edit-items-";
+    var idend = "-actions-remove";
+    var tgtbtid = idstart.concat(btnID).concat(idend);
+    var targetBtn = document.getElementById(tgtbtid);
+    targetBtn.click();
+}
+
+document.getElementById("edit-product-search--2").placeholder = "search products...";
+document.getElementsByClassName("facet-item__status").innerHTML = "Hello!";

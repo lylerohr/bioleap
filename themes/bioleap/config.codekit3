@@ -505,6 +505,13 @@
 		"oAP": "/templates/block/block--bioleap-product-catalog-search.html.twig",
 		"oF": 0
 		},
+	"/templates/block/block--views-block--related-products-product--related-products.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/block/block--views-block--related-products-product--related-products.html.twig",
+		"oF": 0
+		},
 	"/templates/commerce-wishlist/commerce-product-variation--cart.html.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -512,11 +519,18 @@
 		"oAP": "/templates/commerce-wishlist/commerce-product-variation--cart.html.twig",
 		"oF": 0
 		},
-	"/templates/commerce-wishlist/commerce-wishlist-user-form-.html.twig": {
+	"/templates/commerce-wishlist/commerce-wishlist-user-form.html.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/templates/commerce-wishlist/commerce-wishlist-user-form-.html.twig",
+		"oAP": "/templates/commerce-wishlist/commerce-wishlist-user-form.html.twig",
+		"oF": 0
+		},
+	"/templates/facets/facets-item-list--links--manufacturer.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/facets/facets-item-list--links--manufacturer.html.twig",
 		"oF": 0
 		},
 	"/templates/facets/facets-item-list.html.twig": {
@@ -524,6 +538,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/templates/facets/facets-item-list.html.twig",
+		"oF": 0
+		},
+	"/templates/facets/facets-result-item.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/facets/facets-result-item.html.twig",
 		"oF": 0
 		},
 	"/templates/navigation/menu--cta-menu.html.twig": {
@@ -587,6 +608,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/templates/regions/region--content.html.twig",
+		"oF": 0
+		},
+	"/templates/regions/region--contentbottom.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/regions/region--contentbottom.html.twig",
 		"oF": 0
 		},
 	"/templates/regions/region--footer.html.twig": {
@@ -1250,6 +1278,45 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/themedev/assets/styles/partials/organisms/_catalog-filter-group.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/themedev/assets/styles/partials/organisms/_catalog-filter-group.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/themedev/assets/styles/partials/organisms/_catalog-header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/themedev/assets/styles/partials/organisms/_catalog-header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/themedev/assets/styles/partials/organisms/_catalog-search-form.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/themedev/assets/styles/partials/organisms/_catalog-search-form.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/themedev/assets/styles/partials/organisms/_control-bar.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1341,6 +1408,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/themedev/assets/styles/partials/organisms/_related-products-grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/themedev/assets/styles/partials/organisms/_related-products-grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/themedev/assets/styles/partials/organisms/_wishlist-card.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1350,6 +1430,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/themedev/assets/styles/partials/organisms/_wishlist-card.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/themedev/assets/styles/partials/organisms/_wishlist-modal.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/themedev/assets/styles/partials/organisms/_wishlist-modal.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

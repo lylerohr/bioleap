@@ -1,0 +1,88 @@
+div.ui-dialog {
+    box-shadow: 6px 6px 6px transparentize(color(black), .15);
+    border: none !important;
+    padding: layout(spacing--md);
+    z-index: 1001;
+}
+
+.ui-dialog-titlebar {
+    background-color: transparent;
+    border: none;
+    margin-bottom: layout(spacing--md);
+    padding: 0 !important;
+
+    .ui-dialog-title {
+        @extend %heading;
+        @extend %heading--h6;
+        margin: 0;
+    }
+
+    .ui-button {
+        border: none;
+    }
+}
+
+#drupal-modal {
+    padding: 0 !important;
+
+    #commerce-wishlist-default-share-form  {
+
+        .form-item-to,
+        .form-item-sender-name {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-bewteen;
+            margin-bottom: layout(spacing--sm);
+            align-items: center;
+
+            label {
+                flex-basis: 100%;
+                margin-bottom: layout(spacing--2xs);
+            }
+
+            input {
+                flex-basis: 100%;
+                background: none;
+                border: border(hairline, blue);
+                padding: layout(spacing--xs);
+                @include responsive-type(fs--14, display);
+                outline: none;
+                color: color(black);
+            }
+        }
+
+        .form-item-sender-message {
+
+            label {
+                margin-bottom: layout(spacing--2xs);
+                @include responsive-type(fs--14, display);
+            }
+
+            textarea {
+                background: none;
+                border: border(hairline, blue);
+                padding: layout(spacing--xs);
+                @include responsive-type(fs--14, display);
+                color: color(black);
+            }
+        }
+    }
+}
+
+
+
+.ui-dialog-buttonpane {
+    border: none;
+    padding: 0 !important;
+
+    .button--primary.form-submit {
+        @extend %button;
+        @extend %button--default;
+    }
+}
+
+.ui-widget-overlay.ui-front {
+    background-color: transparentize(#000000, .15);
+    opacity: 1;
+    z-index: 1000;
+}

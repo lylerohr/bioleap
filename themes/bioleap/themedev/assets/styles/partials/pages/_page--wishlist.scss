@@ -1,4 +1,29 @@
-.#{$pre}wishlist {
+.#{$pre}wishlist-page {
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: layout(spacing--sm);
+    }
+
+    &__heading {
+        @extend %heading;
+        @extend %heading--h3;
+    }
+
+    .wishlist-button {
+        padding-right: layout(spacing--md);
+        
+        &::before {
+            font-family: "Font Awesome 5 Pro";
+            content: '\f0e0';
+            font-size: rem(font-size(fs--13));
+            color: color(orange);
+            padding-right: layout(spacing--xs);
+        }
+    }
+
 
     &__heading {
         @extend %heading--h3;

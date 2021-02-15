@@ -1,0 +1,36 @@
+.#{$pre}product-catalog-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: layout(spacing--lg);
+
+    &__heading-container {
+        display: flex;
+        flex-wrap: no-wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: layout(spacing--xl);
+
+        h2 {
+            @extend %heading--h4;
+        }
+
+        .#{$pre}product-catalog-header__wishlist {
+
+            &-link {
+                @include responsive-type(fs--12, display);
+
+                &::before {
+                    content: '\f005';
+                    font-family: "Font Awesome 5 Pro";
+                    color: color(orange);
+                    padding-right: layout(spacing--xs);
+                }
+            }
+        }
+    }
+
+
+    .#{$pre}search-form {
+        flex-basis: 100%;
+    }
+}

@@ -1,20 +1,60 @@
+.#{$pre}wishlist-item {
+    margin-top: layout(spacing--lg) * -1;
+
+    &__remove-button {
+        padding-right: layout(spacing--md);
+        position: relative;
+        top: layout(spacing--xl);
+
+        &::before {
+            font-family: "Font Awesome 5 Pro";
+            content: '\f068';
+            font-size: rem(font-size(fs--13));
+            color: color(orange);
+            padding-right: layout(spacing--xs);
+        }
+    }
+
+    &__entity {
+        text-align: right;
+
+
+
+        input[type="submit"] {
+            border: none;
+            background: none;
+            outline: none;
+            @include responsive-type(fs--13, text);
+            color: color(blue);
+            display: inline-block;
+            transition: transition(base);
+            cursor: pointer;
+            margin-top: layout(spacing--sm);
+
+
+            &:hover {
+                color: color(blue-dark);
+                transition: transition(base);
+            }
+        }
+
+        
+    }
+}
+
 .#{$pre}wishlist-card {
+    text-align: left;
     display: flex;
-    padding: layout(spacing--lg) layout(spacing--sm);
+    padding: layout(spacing--sm) layout(spacing--sm) layout(spacing--lg);
     border-bottom: border(hairline, blue);
     transition: transition(base);
-
-    &:hover {
-        transition: transition(base);
-        background-color: color(gray);
-    }
 
     &__image-container {
         flex-basis: 20%;
         padding-right: layout(spacing--sm);
     }
 
-    &__image img {
+    &__image a img {
         width: 100%;
         height: auto;
     }
@@ -25,9 +65,12 @@
     }
 
     &__title {
-        @extend %heading--h6;
         margin-bottom: layout(spacing--xs);
         cursor: pointer;
+
+        a {
+            @extend %heading--h6;
+        }
     }
 
     &__manufacturer {
@@ -72,17 +115,13 @@
             @extend %button;
             @extend %button--default;
             margin-bottom: layout(spacing--md);
+            position: relative;
+            top: layout(spacing--2xl);
         }
 
         &-remove {
 
-            &::before {
-                font-family: "Font Awesome 5 Pro";
-                content: '\f068';
-                font-size: rem(font-size(fs--13));
-                color: color(orange);
-                padding-right: layout(spacing--xs);
-            }
+
         }
     }
 }

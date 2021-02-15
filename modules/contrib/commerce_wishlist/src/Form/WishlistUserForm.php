@@ -186,14 +186,15 @@ class WishlistUserForm extends EntityForm {
       '#markup' => $this->t('Your wishlist is empty.'),
       '#access' => !$wishlist_has_items,
     ];
-    $form['header']['add_all_to_cart'] = [
-      '#type' => 'submit',
-      '#value' => t('Add the entire list to cart'),
-      '#ajax' => [
-        'callback' => [get_called_class(), 'ajaxRefreshForm'],
-      ],
-      '#access' => $wishlist_has_items,
-    ];
+    // COMBAK: TAHOE EDIT
+    // $form['header']['add_all_to_cart'] = [
+    //   '#type' => 'submit',
+    //   '#value' => t('Add the entire list to cart'),
+    //   '#ajax' => [
+    //     'callback' => [get_called_class(), 'ajaxRefreshForm'],
+    //   ],
+    //   '#access' => $wishlist_has_items,
+    // ];
     $form['header']['share'] = [
       '#type' => 'link',
       '#title' => $this->t('Share the list by email'),
@@ -213,7 +214,8 @@ class WishlistUserForm extends EntityForm {
         ]),
         'role' => 'button',
       ],
-      '#access' => $owner_access && $wishlist_has_items,
+      //COMBAK: TAHOE EDIT '#access' => $owner_access && $wishlist_has_items,
+      '#access' => $wishlist_has_items,
     ];
 
     $form['items'] = [];
@@ -252,18 +254,18 @@ class WishlistUserForm extends EntityForm {
       $item_form['actions'] = [
         '#type' => 'container',
       ];
-      $item_form['actions']['add_to_cart'] = [
-        '#type' => 'submit',
-        '#value' => t('Add to cart'),
-        '#ajax' => [
-          'callback' => [get_called_class(), 'ajaxRefreshForm'],
-        ],
-        '#submit' => [
-          '::addToCartSubmit',
-        ],
-        '#name' => 'add-to-cart-' . $item->id(),
-        '#item_id' => $item->id(),
-      ];
+      // $item_form['actions']['add_to_cart'] = [
+      //   '#type' => 'submit',
+      //   '#value' => t('Add to cart'),
+      //   '#ajax' => [
+      //     'callback' => [get_called_class(), 'ajaxRefreshForm'],
+      //   ],
+      //   '#submit' => [
+      //     '::addToCartSubmit',
+      //   ],
+      //   '#name' => 'add-to-cart-' . $item->id(),
+      //   '#item_id' => $item->id(),
+      // ];
       $item_form['actions']['remove'] = [
         '#type' => 'submit',
         '#value' => t('Remove'),

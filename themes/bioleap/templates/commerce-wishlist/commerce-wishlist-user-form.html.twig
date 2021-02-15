@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Template for the wishlist user form.
+ *
+ * Available variables:
+ * - form: The form.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="wishlist-user-form clearfix">
+    <div class="bl_wishlist-page__header">
+        <h1 class="bl_wishlist-page__heading">Wishlist</h1>
+        {{ form.header }}
+    </div>
+    <div class="wishlist-items">
+        {% for key, item in form.items if key|first != '#' %}
+        <div class="bl_wishlist-item">
+            <div class="bl_wishlist-item__entity">
+                <span class="bl_wishlist-item__remove-button">{{ item.actions.remove }}</span>
+                {{ item.entity }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {{ form|without('header', 'items') }}
+</div>

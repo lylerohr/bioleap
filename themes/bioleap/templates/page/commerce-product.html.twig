@@ -1,40 +1,91 @@
+{% set carouselIncrement = 0 %}
+{% set carouselNavIncrement = 0 %}
+{% set filesIncrement = 0 %}
+{% set videoIncrement = 0 %}
+{% set videoNavIncrement = 0 %}
+{% set videoModalIncrement = 0 %}
+
 <div class="bl_surface__section bl_surface__section--50">
-    <div class="bl_product-files">
+    <div class="bl_product-media">
+
         <div class="bl_product-image-carousel ">
             <div class="bl_product-slick">
                 {{product.field_prod__featured_image.0}}
-                {{product.field_prod__images.0}}
-                {{product.field_prod__images.1}}
-                {{product.field_prod__images.2}}
-                {{product.field_prod__images.3}}
+
+                {% if product.field_prod__images["#items"] %}
+                    {% for image in product.field_prod__images["#items"] %}
+                        {{ product.field_prod__images[carouselIncrement] }}
+                        {% set carouselIncrement = carouselIncrement + 1 %}
+                    {% endfor %}
+                {% endif %}
+
+                {% if product.field_prod__tube["#items"] %}
+                    {% for video in product.field_prod__tube["#items"] %}
+                        <div class="bl_embed-container bl_embed-container--thumb">
+                            <iframe src="https://www.youtube.com/embed/{{product.field_prod__tube[videoIncrement]["#video_id"]}}?rel=0&showinfo=0" frameborder="0"></iframe>
+                            <a onClick="showModal({{product.field_prod__tube[videoIncrement]["#video_id"]}})" class="bl_embed-container__blanket"></a>
+                        </div>
+                        {% set videoIncrement = videoIncrement + 1 %}
+                    {% endfor %}
+                {% endif %}
+
             </div>
+
+            {% if product.field_prod__images["#items"] %}
             <div class="bl_product-slick__nav">
                 <div class="bl_product-slick__nav-item">
                     {{product.field_prod__featured_image.0}}
                 </div>
-                <div class="bl_product-slick__nav-item">
-                    {{product.field_prod__images.0}}
-                </div>
-                <div class="bl_product-slick__nav-item">
-                    {{product.field_prod__images.1}}
-                </div>
-                <div class="bl_product-slick__nav-item">
-                    {{product.field_prod__images.2}}
-                </div>
-                <div class="bl_product-slick__nav-item">
-                    {{product.field_prod__images.3}}
-                </div>
+
+                {% if product.field_prod__images["#items"] %}
+                    {% for image in product.field_prod__images["#items"] %}
+                    <div class="bl_product-slick__nav-item">
+                        {{ product.field_prod__images[carouselNavIncrement] }}
+                        {% set carouselNavIncrement = carouselNavIncrement + 1 %}
+                    </div>
+                    {% endfor %}
+                {% endif %}
+
+                {% if product.field_prod__tube["#items"] %}
+                    {% for video in product.field_prod__tube["#items"] %}
+                        <div class="bl_product-slick__nav-item">
+                            <div class="bl_embed-container bl_embed-container--thumb">
+                                <iframe src="https://www.youtube.com/embed/{{product.field_prod__tube[videoNavIncrement]["#video_id"]}}?showinfo=0" frameborder="0"></iframe>
+                                <a class="bl_embed-container__blanket"></a>
+                            </div>
+                        </div>
+
+                        {% set videoNavIncrement = videoNavIncrement + 1 %}
+                    {% endfor %}
+                {% endif %}
+
             </div>
+            {% endif %}
+
+            {% if product.field_prod__tube["#items"] %}
+                {% for video in product.field_prod__tube["#items"] %}
+                    <div id="{{product.field_prod__tube[videoModalIncrement]["#video_id"]}}" class="bl_video-modal">
+                        <div onClick="hideModal({{product.field_prod__tube[videoModalIncrement]["#video_id"]}})" class="bl_video-modal__bg"></div>
+                        <div class="bl_video-modal__container">
+                            <div class="bl_embed-container">
+                                <iframe src="https://www.youtube.com/embed/{{product.field_prod__tube[videoModalIncrement]["#video_id"]}}" frameborder="0"></iframe>
+                            </div>
+                            <span onClick="hideModal({{product.field_prod__tube[videoModalIncrement]["#video_id"]}})" class="bl_video-modal__close">close video</span>
+                        </div>
+                    </div>
+                    {% set videoModalIncrement = videoModalIncrement + 1 %}
+                {% endfor %}
+            {% endif %}
+
         </div>
     </div>
-
 </div>
+
 <div class="bl_surface__section bl_surface__section--50">
 <div class="bl_product-information">
     <div class="bl_wishlist-save">
         <a class="bl_wishlist-save__add" href="#">
-            <img src="../../images/star-icon.svg" alt="">
-            Save to my list
+            {{product.variations}}
         </a>
     </div>
     <h1 class="bl_product-title">{{product.title.0}}</h1>
@@ -42,11 +93,15 @@
         Manufacturer Name
     </div>
     <div class="bl_buy-info">
-        <div class="bl_buy-info__where-to-buy" href="#">
-            {{product.variations}}
+        <div class="bl_buy-info__where-to-buy">
+            <a target="_blank" href="{{product.field_prod__buy_url[0]["#url"].uri}}">Where to Buy</a>
         </div>
         <div class="bl_buy-info__price">
+        {% if product.field_prod__price_info.0 %}
             {{product.field_prod__price_info.0}}
+        {% else %}
+            <span>Click 'Where to Buy' for price information.</span>
+        {% endif %}
         </div>
 
     </div>
@@ -70,45 +125,67 @@
         <h6 class="bl_product-additional__heading">Additional Details</h6>
         <span class="bl_heading-rule"></span>
         <div class="bl_product-additional__item">
-            <span class="bl_product-additional__icon"><img src="../../images/x.svg" alt=""></span>
+        {% if product.field_prod__online_compatabilty.0["#markup"] == "Yes" %}
+            <span class="bl_product-additional__icon"><i class="fas fa-check yes"></i></span>
+        {% else %}
+            <span class="bl_product-additional__icon"><i class="fas fa-times no"></i></span>
+        {% endif %}
             <span class="bl_product-additional__info">
                 <p class="bl_product-additional__attribute">Compatible with online learning</p>
                 <p class="bl_product-additional__description">This product is compatible with online learning.</p>
             </span>
         </div>
         <div class="bl_product-additional__item">
-            <span class="bl_product-additional__icon"><img src="../../images/x.svg" alt=""></span>
+        {% if product.field_prod__reusable.0["#markup"] == "Yes" %}
+            <span class="bl_product-additional__icon"><i class="fas fa-check yes"></i></span>
+        {% else %}
+            <span class="bl_product-additional__icon"><i class="fas fa-times no"></i></span>
+        {% endif %}
             <span class="bl_product-additional__info">
                 <p class="bl_product-additional__attribute">Reusable</p>
                 <p class="bl_product-additional__description">This product is reusable.</p>
             </span>
         </div>
         <div class="bl_product-additional__item">
-            <span class="bl_product-additional__icon"><img src="../../images/checkmark.svg" alt=""></span>
+        {% if product.field_prod__supported.0["#markup"] == "Yes" %}
+            <span class="bl_product-additional__icon"><i class="fas fa-check yes"></i></span>
+        {% else %}
+            <span class="bl_product-additional__icon"><i class="fas fa-times no"></i></span>
+        {% endif %}
             <span class="bl_product-additional__info">
                 <p class="bl_product-additional__attribute">Supported</p>
                 <p class="bl_product-additional__description">This product is currently supported by its manufacturer.</p>
             </span>
         </div>
         <div class="bl_product-additional__item">
-            <span class="bl_product-additional__icon"><img src="../../images/x.svg" alt=""></span>
+        {% if product.field_prod__special_hardware.0["#markup"] == "Yes" %}
+            <span class="bl_product-additional__icon"><i class="fas fa-check yes"></i></span>
+        {% else %}
+            <span class="bl_product-additional__icon"><i class="fas fa-times no"></i></span>
+        {% endif %}
             <span class="bl_product-additional__info">
                 <p class="bl_product-additional__attribute">No special hardware or accessories needed</p>
                 <p class="bl_product-additional__description">This product is standalone.</p>
             </span>
         </div>
     </div>
+
+    {% if product.field_prod__files["#items"] %}
     <div class="bl_product-documents">
         <h6 class="bl_product-documents__heading">Documents</h6>
         <span class="bl_heading-rule"></span>
         <ul class="bl_product-documents__list">
+        {% for image in product.field_prod__files["#items"] %}
             <li class="bl_product-documents__item">
-                <a class="bl_product-documents__link" href="#">
-                    <img class="bl_product-documents__icon" src="../../images/pdf-icon.svg" alt="">
-                    User Manual
+                <a target="_blank" class="bl_product-documents__link" href="{{ file_url(product.field_prod__files['#items'][filesIncrement].entity.uri.value) }}">
+                    {{ product.field_prod__files['#items'][filesIncrement].description }}
                 </a>
             </li>
+            {% set filesIncrement = filesIncrement + 1 %}
+        {% endfor %}
+
         </ul>
     </div>
+    {% endif %}
 </div>
 </div>

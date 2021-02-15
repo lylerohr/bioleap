@@ -1,0 +1,7 @@
+{% if is_active %}
+  <span class="facet-item__status js-facet-deactivate"><span class="fas fa-check"></span></span>
+{% endif %}
+<span class="facet-item__value">{{ value }}</span>
+{% if show_count %}
+  <span class="facet-item__count">({{ count }})</span>
+{% endif %}

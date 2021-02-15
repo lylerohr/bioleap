@@ -1,0 +1,94 @@
+.#{$pre}filter-group {
+    margin-bottom: layout(spacing--lg);
+    overflow: hidden;
+    transition: transition(base);
+
+    &__name {
+        @extend %heading--h7;
+        padding-left: layout(spacing--md);
+        padding-bottom: layout(spacing--xs);
+        margin-bottom: layout(spacing--sm);
+        border-bottom: border(hairline, blue);
+        position: relative;
+        cursor: pointer;
+
+        &::after  {
+            content: "\f068";
+            position: absolute;
+            right: layout(spacing--md);
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: "Font Awesome 5 Pro";
+            font-size: rem(font-size(fs--13));
+        }
+
+        .collapse & {
+
+        }
+    }
+
+    a {
+        display: inline-block;
+        padding: layout(spacing--3xs) layout(spacing--md);
+
+        &:hover {
+            background-color: color(gray);
+        }
+
+        &.is-active {
+            font-weight: 600;
+        }
+    }
+
+    &__list {
+        max-height: 800px;
+        transition: transition(slow);
+    }
+
+    &.collapse {
+
+        .#{$pre}filter-group__name {
+            &::after {
+                content: "\f067";
+            }
+        }
+
+        .#{$pre}filter-group__list {
+            max-height: 0;
+            transition: transition(slow);
+        }
+    }
+
+    .facet-item__status {
+        @include responsive-type(fs--14, display);
+        color: color(orange);
+    }
+
+    // Secondary Level Facets
+    .#{$pre}filter-group {
+        margin-bottom: layout(spacing--xs);
+    }
+
+    .facet-item--expanded .#{$pre}filter-group .#{$pre}filter-group__list {
+        margin-bottom: layout(spacing--xs);
+
+        li {
+            position: relative;
+        }
+
+        li::before {
+            content: "- ";
+            color: color(blue);
+            position: relative;
+            left: layout(spacing--md);
+        }
+
+        a {
+            padding-left: layout(spacing--lg);
+
+            &.is-active {
+                font-weight: 600;
+            }
+        }
+    }
+}

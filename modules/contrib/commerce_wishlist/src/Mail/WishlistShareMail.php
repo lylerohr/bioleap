@@ -46,11 +46,11 @@ class WishlistShareMail implements WishlistShareMailInterface {
    */
   public function send(WishlistInterface $wishlist, $to) {
     $owner = $wishlist->getOwner();
-    if (!$owner || $owner->isAnonymous()) {
+    //if (!$owner || $owner->isAnonymous()) {
       // Only wishlists belonging to authenticated users can be shared.
       // COMBAK: Tahoe edit comment out return FALSE
       //return FALSE;
-    }
+    //}
 
     $subject = $this->t('@sender_name sent you a wishlist from @site-name ', [
       '@site-name' => $this->configFactory->get('system.site')->get('name'),

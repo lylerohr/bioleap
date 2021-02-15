@@ -9,6 +9,6 @@ global-scripts:
     version: 1.x
     js:
         libraries/slick/slick/slick.min.js: {}
-        scripts/scripts-min.js: {}
+        scripts/scripts.js: {}
     dependencies:
         - core/jquery

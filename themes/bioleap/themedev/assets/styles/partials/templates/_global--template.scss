@@ -6,6 +6,10 @@
         padding-top: $nav-height * 1.5;
     }
 
+    &--no-padding {
+        padding-top: 0;
+    }
+
     &__section {
     	@include make-row;
     	position: relative;
