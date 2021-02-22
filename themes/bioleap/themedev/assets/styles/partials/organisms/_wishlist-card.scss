@@ -3,8 +3,17 @@
 
     &__remove-button {
         padding-right: layout(spacing--md);
-        position: relative;
-        top: layout(spacing--xl);
+        position: absolute;
+        bottom: 1rem;
+        right: 50%;
+        transform: translateX(50%);
+
+        @include respond-to(tablet) {
+            position: relative;
+            top: layout(spacing--xl);
+            right: 0;
+            transform: none !important;
+        }
 
         &::before {
             font-family: "Font Awesome 5 Pro";
@@ -16,8 +25,13 @@
     }
 
     &__entity {
+        position: relative;
         text-align: right;
+        margin-bottom: 3rem;
 
+        @include respond-to(tablet) {
+            margin-bottom: 0;
+        }
 
 
         input[type="submit"] {
@@ -38,7 +52,7 @@
             }
         }
 
-        
+
     }
 }
 
@@ -48,10 +62,21 @@
     padding: layout(spacing--sm) layout(spacing--sm) layout(spacing--lg);
     border-bottom: border(hairline, blue);
     transition: transition(base);
+    flex-direction: column;
+    @include respond-to(tablet) {
+        flex-direction: row;
+    }
 
     &__image-container {
-        flex-basis: 20%;
-        padding-right: layout(spacing--sm);
+        flex-basis: 100%;
+        margin-bottom: layout(spacing--lg);
+
+
+        @include respond-to(tablet) {
+            flex-basis: 20%;
+            margin-bottom: 0;
+            padding-right: layout(spacing--sm);
+        }
     }
 
     &__image a img {
@@ -60,8 +85,14 @@
     }
 
     &__info {
-        flex-basis: 40%;
-        padding-right: layout(spacing--sm);
+        flex-basis: 100%;
+        margin-bottom: layout(spacing--lg);
+
+        @include respond-to(tablet) {
+            flex-basis: 40%;
+            margin-bottom: 0;
+            padding-right: layout(spacing--sm);
+        }
     }
 
     &__title {
@@ -84,11 +115,15 @@
 
     &__attributes {
         padding-right: layout(spacing--sm);
-        flex-basis: 25%;
+        flex-basis: 100%;
         display: flex;
         flex-wrap: wrap;
         margin-bottom: layout(spacing--xl);
         @include responsive-type(fs--14, text);
+
+        @include respond-to(tablet) {
+            flex-basis: 25%;
+        }
     }
 
     &__term {
@@ -106,17 +141,28 @@
     }
 
     &__actions {
-        flex-basis: 15%;
+        flex-basis: 100%;
         display: flex;
         flex-direction: column;
-        text-align: right;
+
+
+        @include respond-to(tablet) {
+            text-align: right;
+            flex-basis: 15%;
+        }
 
         &-where-to-buy {
             @extend %button;
             @extend %button--default;
             margin-bottom: layout(spacing--md);
-            position: relative;
-            top: layout(spacing--2xl);
+
+
+            @include respond-to(tablet) {
+                text-align: center;
+                flex-basis: 15%;
+                position: relative;
+                top: layout(spacing--2xl);
+            }
         }
 
         &-remove {

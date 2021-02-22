@@ -12,4 +12,146 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    &--title {
+        height: 30vh;
+        border-bottom: layout(spacing--sm) solid color(blue);
+
+        @include respond-to(tablet) {
+            height: 25vh;
+            max-height: auto;
+            min-heigh: auto;
+        }
+
+        @include respond-to(desktop) {
+            height: 20vh;
+            max-height: 440px;
+            min-height: 300px;
+        }
+
+        .#{$pre}masthead__image-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .#{$pre}masthead__banner {
+            position: absolute;
+            width: 90vw;
+            bottom: layout(spacing--xl);
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: transparentize(color(gray), .2);
+            padding: layout(spacing--xl);
+            text-align: center;
+
+            @include respond-to(tablet) {
+                width: 70vw;
+            }
+
+            @include respond-to(desktop) {
+                width: 60vw;
+            }
+
+            @include respond-to(desktop) {
+                width: 50vw;
+            }
+        }
+
+        .#{$pre}masthead__heading {
+            @extend %heading--h3;
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+
+    &--banner {
+        height: 95vh;
+        border-bottom: layout(spacing--sm) solid color(blue);
+
+        @include respond-to(tablet) {
+            height: 45vh;
+            max-height: auto;
+            min-heigh: auto;
+        }
+
+        @include respond-to(desktop) {
+            height: 45vh;
+            max-height: 740px;
+            min-height: 500px;
+        }
+
+        @include respond-to(desktop-large) {
+
+        }
+
+        .#{$pre}masthead__banner {
+            position: absolute;
+            bottom: layout(spacing--lg);
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: color(white);
+            width: 90vw;
+            padding: layout(spacing--lg);
+
+            @include respond-to(tablet) {
+                width: 50vw;
+                max-width: 640px;
+                bottom: layout(spacing--lg);
+                right: layout(spacing--lg);
+                transform: translateX(layout(spacing--lg)*-1);
+            }
+
+            @include respond-to(desktop) {
+                width: 50vw;
+                max-width: 640px;
+                bottom: layout(spacing--lg);
+                right: layout(spacing--lg);
+            }
+
+            @include respond-to(desktop-large) {
+                width: 50vw;
+                max-width: 640px;
+                bottom: layout(spacing--lg);
+                right: layout(spacing--lg);
+            }
+        }
+
+        .#{$pre}masthead__image-wrapper {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .#{$pre}masthead__image {
+            //width: auto;
+            //object-fit: cover;
+        }
+
+        .#{$pre}masthead__heading {
+            @extend %heading--h5;
+        }
+
+        .#{$pre}masthead__subhead {
+
+        }
+
+        .#{$pre}masthead__primary-cta {
+            @extend %button;
+            @extend %button--default;
+            margin-right: layout(spacing--sm);
+        }
+
+        .#{$pre}masthead__secondary-cta {
+            @extend %button;
+            @extend %button--link;
+        }
+    }
+
+
+
+
 }

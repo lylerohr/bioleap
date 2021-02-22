@@ -1,123 +1,276 @@
 .#{$pre}header {
-    display: flex;
-    width: 100%;
     position: fixed;
-    height: $nav-height;
-    background-color: transparentize(white, .1);
+    width: 100%;
+    height: $nav-height-squished;
     z-index: 1000;
     transition: transition(base);
+    background-color: transparentize(white, .1);
 
-    #block-bioleap-main-menu {
+
+    @include respond-to(desktop-large) {
+        height: $nav-height;
         width: 100%;
         display: flex;
     }
 
-    &__branding {
-        background-color: color(white);
-        padding: layout(spacing--md);
-        display: inline-block;
+    &__tofuburger {
         position: absolute;
-    }
+        right: layout(spacing--md);
+        top: layout(spacing--md);
+        width: layout(spacing--lg);
+        z-index: 1000;
+        cursor: pointer;
 
-    &__logo {
-        width: 150px;
-        transition: transition(base);
-    }
-
-    &__nav {
-        display: flex;
-        height: $nav-height;
-        margin-left: layout(layout--2xl);
-        transition: transition(base);
-
-        &-item {
-            height: $nav-height;
-
+        span {
+            display: block;
+            margin-bottom: 6px;
+            border-bottom: 2px solid color(blue);
         }
 
-        a {
-            @include responsive-type(fs--14, display);
-            height: $nav-height;
-            padding: 0 layout(spacing--sm);
-            line-height: $nav-height;
-            display: inline-block;
-            color: color(black);
-            text-transform: uppercase;
-            font-weight: 600;
-            letter-spacing: 1px;
-            outline: none;
-            &:hover {
-                background-color: color(blue);
-                color: color(white);
+        @include respond-to(desktop-large) {
+            display: none;
+        }
+    }
 
+    .#{$pre}header__menus {
+        position: fixed;
+        top: 0;
+        right: 100%;
+        bottom: 0;
+        left: -100%;
+        background-color: white;
+        z-index: 999;
+        transition: transition(base);
+
+        &.open {
+            right: 0%;
+            left: 0%;
+
+            .#{$pre}header__tofuburger {
+
+                &__top-bun {
+
+                }
+
+                &__tofu {
+
+                }
+
+                &__bottom-bun {
+
+                }
             }
         }
-    }
 
-    #block-ctamenu {
-        width: 33%;
-        flex-basis: 33%;
-    }
-
-    .#{$pre}header__actions {
-        float: right;
-
-        ul {
+        @include respond-to(desktop-large) {
+            position: static;
+            top: inherit;
+            right: inherit;
+            bottom: inherit;
+            left: inherit;
+            width: 100%;
+            background-color: transparent;
             display: flex;
         }
 
-        ul li a {
-            @extend %button;
-            @extend %button--default;
+
+        #block-bioleap-main-menu {
+            width: 100%;
+            height: 100%;
+
+            @include respond-to(desktop-large) {
+                width: 100%;
+                display: flex;
+            }
+
+
+            .#{$pre}header__nav {
+                transition: transition(base);
+                padding-top: 86px;
+
+                @include respond-to(desktop-large) {
+                    display: flex;
+                    margin-left: 155px;
+                    height: $nav-height;
+                    padding-top: 0;
+                }
+
+                .#{$pre}header__nav-item {
+                    padding: 0;
+
+                    @include respond-to(desktop-large) {
+                        padding: layout(spacing--sm) 0;
+                        height: $nav-height;
+                        padding: 0;
+                    }
+                }
+
+                a {
+                    font-size: 1rem;
+                    padding: layout(spacing--md) layout(spacing--sm);
+
+                    display: inline-block;
+                    color: color(black);
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    outline: none;
+                    display: block;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: color(blue);
+                        color: color(white);
+
+                    }
+
+                    @include respond-to(desktop-large) {
+                        font-size: .9rem;
+                        line-height: $nav-height;
+                        height: $nav-height;
+                        padding: 0 layout(spacing--sm);
+                    }
+                }
+
+
+            }
         }
 
-        ul li:last-child a {
-            @extend %button;
-            @extend %button--super;
-        }
+        #block-ctamenu {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
 
-        ul li a,
-        ul li:first-child a,
-        ul li:last-child a {
-            height: $nav-height;
-            line-height: $nav-height;
-            padding-top: 0;
-            padding-bottom: 0;
+
+            @include respond-to(desktop-large) {
+                position: relative;
+                bottom: inherit;
+                width: 33%;
+                flex-basis: 33%;
+            }
+
+            .#{$pre}header__actions {
+
+
+                @include respond-to(desktop-large) {
+                    float: right;
+                }
+
+                ul {
+
+
+                    @include respond-to(desktop-large) {
+                        display: flex;
+                    }
+                }
+
+                ul li a {
+                    @extend %button;
+                    @extend %button--default;
+                    display: block;
+                    font-size: .9rem;
+
+                    @include respond-to(desktop-large) {
+                        font-size: .85rem;
+                    }
+
+                    @include respond-to(desktop-extra-large) {
+                        font-size: .9rem;
+                    }
+                }
+
+                ul li:last-child a {
+                    @extend %button;
+                    @extend %button--super;
+                    display: block;
+                }
+
+                ul li a,
+                ul li:first-child a,
+                ul li:last-child a {
+                    height: $nav-height;
+                    line-height: $nav-height;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    font-size: .9rem;
+
+                    @include respond-to(desktop-large) {
+                        font-size: .85rem;
+                    }
+
+                    @include respond-to(desktop-extra-large) {
+                        font-size: .9rem;
+                    }
+                }
+            }
         }
     }
 
     &.squished {
-        height: $nav-height-squished;
+        .#{$pre}header__logo {
+            width: 65px;
+            transition: transition(base);
+        }
+
+        @include respond-to(desktop-large) {
+            height: $nav-height-squished;
+            transition: transition(base);
+
+            .#{$pre}header__logo {
+                width: 92px;
+                transition: transition(base);
+            }
+
+            .#{$pre}header__nav {
+                height: $nav-height-squished !important;
+                margin-left: layout(layout--lg) !important;
+                transition: transition(base);
+
+                &-item {
+                    height: $nav-height-squished !important;
+
+                }
+
+                a {
+                    height: $nav-height-squished !important;
+                    line-height: $nav-height-squished !important;
+                }
+            }
+
+            .#{$pre}header__actions {
+                ul li a,
+                ul li:first-child a,
+                ul li:last-child a {
+                    height: $nav-height-squished !important;
+                    line-height: $nav-height-squished !important;
+                }
+            }
+        }
+
+    }
+
+    &__branding {
+        background-color: color(white);
+        padding: layout(spacing--xs);
+        display: inline-block;
+        position: absolute;
+        z-index: 1000;
+
+        @include respond-to(desktop-large) {
+            padding: layout(spacing--md);
+        }
+    }
+
+    &__logo {
+        width: 90px;
         transition: transition(base);
 
-        .#{$pre}header__logo {
-            width: 92px;
-            transition: transition(base);
+        @include respond-to(tablet) {
+            width: 110px;
         }
 
-        .#{$pre}header__nav {
-            height: $nav-height-squished;
-            margin-left: layout(layout--lg);
-            transition: transition(base);
-
-            &-item {
-                height: $nav-height-squished;
-
-            }
-
-            a {
-                height: $nav-height-squished;
-                line-height: $nav-height-squished;
-            }
-        }
-
-        .#{$pre}header__actions {
-            ul li a,
-            ul li:first-child a,
-            ul li:last-child a {
-                height: $nav-height-squished;
-                line-height: $nav-height-squished;
-            }
+        @include respond-to(desktop-large) {
+            width: 120px;
         }
     }
 

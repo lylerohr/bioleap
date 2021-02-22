@@ -1,0 +1,44 @@
+.#{$pre}banner {
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 0;
+    position: relative;
+    height: 40vh;
+    max-height: 640px;
+    min-height: 520px;
+
+    &__block {
+        position: absolute;
+        width: 90vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparentize(color(gray), .2);
+        padding: layout(spacing--xl);
+        text-align: center;
+
+        @include respond-to(tablet) {
+            width: 60vw;
+        }
+
+        @include respond-to(desktop) {
+            width: 50vw;
+        }
+
+        @include respond-to(desktop) {
+            width: 40vw;
+        }
+    }
+
+    &__heading {
+        @extend %heading--h5;
+        text-align: center;
+    }
+
+    &__cta {
+        @extend %button;
+        @extend %button--default;
+        text-align: center;
+    }
+
+}

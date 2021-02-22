@@ -1,8 +1,20 @@
 div.ui-dialog {
     box-shadow: 6px 6px 6px transparentize(color(black), .15);
     border: none !important;
-    padding: layout(spacing--md);
+    padding: layout(spacing--lg);
     z-index: 1001;
+    width: 90vw !important;
+    left: 5vw !important;
+
+    @include respond-to(tablet) {
+        padding: layout(spacing--2xl);
+    }
+
+    @include respond-to(desktop) {
+        padding: layout(spacing--2xl);
+        width: 60vw !important;
+        left: 20vw !important;
+    }
 }
 
 .ui-dialog-titlebar {
@@ -37,11 +49,13 @@ div.ui-dialog {
 
             label {
                 flex-basis: 100%;
+                width: 100%;
                 margin-bottom: layout(spacing--2xs);
             }
 
             input {
                 flex-basis: 100%;
+                width: 100%;
                 background: none;
                 border: border(hairline, blue);
                 padding: layout(spacing--xs);

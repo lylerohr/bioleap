@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '31eb61e5b41e585b98da549c37e56e589b470083',
+    'reference' => '8c506599147c623e8d01465df5c46ca9258b1ac7',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -701,6 +701,15 @@ private static $installed = array (
       ),
       'reference' => '8.x-1.8',
     ),
+    'drupal/entity_usage' => 
+    array (
+      'pretty_version' => '2.0.0-beta3',
+      'version' => '2.0.0.0-beta3',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.0-beta3',
+    ),
     'drupal/facets' => 
     array (
       'pretty_version' => '1.6.0',
@@ -838,7 +847,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '31eb61e5b41e585b98da549c37e56e589b470083',
+      'reference' => '8c506599147c623e8d01465df5c46ca9258b1ac7',
     ),
     'drupal/link' => 
     array (
@@ -1179,6 +1188,15 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/twig_tweak' => 
+    array (
+      'pretty_version' => '3.0.0',
+      'version' => '3.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3.0.0',
     ),
     'drupal/twig_vardumper' => 
     array (
@@ -1820,6 +1838,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'b43b05cf43c1b6d849478965062b6ef73e223bb5',
+    ),
+    'twig/extensions' => 
+    array (
+      'pretty_version' => 'v1.5.4',
+      'version' => '1.5.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '57873c8b0c1be51caa47df2cdb824490beb16202',
     ),
     'twig/twig' => 
     array (

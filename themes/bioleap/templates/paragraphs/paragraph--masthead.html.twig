@@ -1,0 +1,23 @@
+{% set imageURI = file_url(content.field_pg_masthead_image[0]['#item'].entity.uri.value) %}
+{% set imageALT = content.field_pg_masthead_image[0]['#item'].alt %}
+{% set heading = content.field_pg_masthead__heading.0 %}
+{% set subhead = content.field_pg_masthead__subhead_copy.0 %}
+{% set pctaURL = content.field_pg_masthead__prim_cta[0]['#url'] %}
+{% set pctaTEXT = content.field_pg_masthead__prim_cta[0]['#title'] %}
+{% set sctaURL = content.field_pg_masthead__sec_cta[0]['#url'] %}
+{% set sctaTEXT = content.field_pg_masthead__sec_cta[0]['#title'] %}
+
+{% block paragraph %}
+    <div class="bl_masthead bl_masthead--banner">
+        {% block content %}
+        <div class="bl_masthead__image-wrapper" style="background-image: url({{ imageURI }})">
+        </div>
+        <div class="bl_masthead__banner">
+            <h2 class="bl_masthead__heading">{{ heading }}</h2>
+            <p class="bl_masthead__subhead">{{ subhead }}</p>
+            <a class="bl_masthead__primary-cta" href="{{ pctaURL }}">{{ pctaTEXT }}</a>
+            <a class="bl_masthead__secondary-cta" href="{{ sctaURL }}">{{ sctaTEXT }}</a>
+        </div>
+        {% endblock %}
+    </div>
+{% endblock paragraph %}

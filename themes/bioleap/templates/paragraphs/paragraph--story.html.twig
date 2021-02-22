@@ -1,0 +1,30 @@
+{% set imageURI = file_url(content.field_pg_story__image[0]['#item'].entity.uri.value) %}
+{% set imageALT = content.field_pg_story__image[0]['#item'].alt %}
+{% set copy = content.field_pg_story__copy.0 %}
+{% set side = content.field_pg_story__image_side['#items'][0].value %}
+{% set heading = content.field_pg_story__heading.0 %}
+{% set ctaURL = content.field_pg_story__cta[0]['#url'] %}
+{% set ctaTEXT = content.field_pg_story__cta[0]['#title'] %}
+
+
+
+{% block paragraph %}
+<div class="bl_surface">
+    <div class="bl_surface__section bl_surface__section--100">
+        <div class="bl_story bl_story--{{side}}">
+        {% block content %}
+            <div class="bl_story__image-wrapper">
+                <img class="bl_story__image" src="{{imageURI}}" alt="{{imageALT}}">
+            </div>
+            <div class="bl_story__copy-block">
+                <h5 class="bl_story__heading">{{heading}}</h5>
+                {% if heading %}<span class="bl_heading-rule"></span>{% endif %}
+                <p class="bl_story__copy">{{copy}}</p>
+                <a class="bl_story__cta" href="{{ctaURL}}">{{ctaTEXT}}</a>
+            </div>
+        {% endblock %}
+        </div>
+    </div>
+</div>
+
+{% endblock paragraph %}

@@ -314,9 +314,11 @@ class WishlistUserForm extends EntityForm {
     $wishlist_item = $wishlist_item_storage->load($triggering_element['#item_id']);
     $this->wishlistManager->removeWishlistItem($wishlist, $wishlist_item);
 
-    $this->messenger()->addStatus($this->t('@entity has been removed from your wishlist.', [
-      '@entity' => $wishlist_item->label(),
-    ]));
+    // COMBAK: TAHOE COMMENT OUT
+    // $this->messenger()->addStatus($this->t('@entity has been removed from your wishlist.', [
+    //   '@entity' => $wishlist_item->label(),
+    // ]));
+    // COMBAK: EO TAHOE COMMENT OUT
     $form_state->setRebuild(TRUE);
   }
 

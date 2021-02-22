@@ -1,0 +1,16 @@
+{% set inc = 0 %}
+
+{% block paragraph %}
+    {% block content %}
+        {% for item in content.field_pg_griditem__image['#items'] %}
+        <div class="bl_card">
+            <div class="bl_card__image-wrapper">
+                <img class="bl_card__image" src="{{ file_url(content.field_pg_griditem__image[inc]['#item'].entity.uri.value) }}" alt="{{ content.field_pg_griditem__image[inc]['#item'].alt }}">
+            </div>
+            <p class="bl_card__copy">{{ content.field_pg_griditem__copy[inc]['#text']|striptags }}</p>
+        </div>
+        {% set inc = inc + 1 %}
+        {% endfor %}
+
+    {% endblock %}
+{% endblock paragraph %}

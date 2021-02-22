@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43df52c4a6d19f9695246681a8e891ab",
+    "content-hash": "0e4810fd40997c43bd0ee3d9a2f56b0e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2526,6 +2526,74 @@
             }
         },
         {
+            "name": "drupal/entity_usage",
+            "version": "2.0.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_usage.git",
+                "reference": "8.x-2.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.0-beta3.zip",
+                "reference": "8.x-2.0-beta3",
+                "shasum": "cc115349eb533013ec672dadbe8cf0cd880bd8c4"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/block_field": "~1.0",
+                "drupal/dynamic_entity_reference": "~1.0",
+                "drupal/entity_browser": "~2.0",
+                "drupal/entity_browser_block": "~1.0",
+                "drupal/entity_embed": "~1.0",
+                "drupal/entity_reference_revisions": "~1.0",
+                "drupal/inline_entity_form": "^1.0@RC",
+                "drupal/paragraphs": "~1.0",
+                "drupal/webform": "~5.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0-beta3",
+                    "datestamp": "1585145909",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "marcoscano",
+                    "homepage": "https://www.drupal.org/user/1288796"
+                },
+                {
+                    "name": "seanB",
+                    "homepage": "https://www.drupal.org/user/545912"
+                }
+            ],
+            "description": "Track usage of entities referenced by other entities",
+            "homepage": "https://www.drupal.org/project/entity_usage",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/entity_usage",
+                "issues": "http://drupal.org/project/issues/entity_usage"
+            }
+        },
+        {
             "name": "drupal/facets",
             "version": "1.6.0",
             "source": {
@@ -3298,6 +3366,61 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "https://git.drupalcode.org/project/token"
+            }
+        },
+        {
+            "name": "drupal/twig_tweak",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/twig_tweak.git",
+                "reference": "3.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/twig_tweak-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "c8596addb06cbc67ad7914533c7e96e97ecbd54a"
+            },
+            "require": {
+                "drupal/core": "^9.0",
+                "ext-json": "*",
+                "php": ">=7.3",
+                "twig/twig": "^2.12"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Better dump() function for debugging Twig variables"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0",
+                    "datestamp": "1608096096",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Chi",
+                    "homepage": "https://www.drupal.org/user/556138"
+                }
+            ],
+            "description": "A Twig extension with some useful functions and filters for Drupal development.",
+            "homepage": "https://www.drupal.org/project/twig_tweak",
+            "keywords": [
+                "Drupal",
+                "Twig"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/twig_tweak",
+                "issues": "https://www.drupal.org/project/issues/twig_tweak"
             }
         },
         {
@@ -7228,6 +7351,66 @@
             "time": "2020-07-13T06:12:54+00:00"
         },
         {
+            "name": "twig/extensions",
+            "version": "v1.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig-extensions.git",
+                "reference": "57873c8b0c1be51caa47df2cdb824490beb16202"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig-extensions/zipball/57873c8b0c1be51caa47df2cdb824490beb16202",
+                "reference": "57873c8b0c1be51caa47df2cdb824490beb16202",
+                "shasum": ""
+            },
+            "require": {
+                "twig/twig": "^1.27|^2.0"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^3.4",
+                "symfony/translation": "^2.7|^3.4"
+            },
+            "suggest": {
+                "symfony/translation": "Allow the time_diff output to be translated"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_Extensions_": "lib/"
+                },
+                "psr-4": {
+                    "Twig\\Extensions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Common additional features for Twig that do not directly belong in core",
+            "keywords": [
+                "i18n",
+                "text"
+            ],
+            "support": {
+                "issues": "https://github.com/twigphp/Twig-extensions/issues",
+                "source": "https://github.com/twigphp/Twig-extensions/tree/master"
+            },
+            "abandoned": true,
+            "time": "2018-12-05T18:34:18+00:00"
+        },
+        {
             "name": "twig/twig",
             "version": "v2.14.1",
             "source": {
@@ -7357,7 +7540,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "alpha",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/entity_usage": 10
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

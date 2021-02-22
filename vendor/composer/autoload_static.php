@@ -44,6 +44,7 @@ class ComposerStaticInitefba49473575d5ef8fc8b6b069696a2b
     public static $prefixLengthsPsr4 = array (
         'T' => 
         array (
+            'Twig\\Extensions\\' => 16,
             'Twig\\' => 5,
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
             'TYPO3\\PharStreamWrapper\\' => 24,
@@ -145,6 +146,10 @@ class ComposerStaticInitefba49473575d5ef8fc8b6b069696a2b
     );
 
     public static $prefixDirsPsr4 = array (
+        'Twig\\Extensions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/extensions/src',
+        ),
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
@@ -423,6 +428,10 @@ class ComposerStaticInitefba49473575d5ef8fc8b6b069696a2b
     public static $prefixesPsr0 = array (
         'T' => 
         array (
+            'Twig_Extensions_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/extensions/lib',
+            ),
             'Twig_' => 
             array (
                 0 => __DIR__ . '/..' . '/twig/twig/lib',

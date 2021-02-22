@@ -14,6 +14,16 @@
 #}
 {% if content %}
     <header class="bl_header" role="banner">
+    <div class="bl_header__branding">
+        <a href="/"><img class="bl_header__logo" src="/themes/bioleap/images/navs-logo.png" alt=""></a>
+    </div>
+    <div class="bl_header__tofuburger">
+        <span class="bl_hamburger__top-bun"></span>
+        <span class="bl_hamburger__tofu"></span>
+        <span class="bl_hamburger__bottom-bun"></span>
+    </div>
+    <div class="bl_header__menus">
         {{ content }}
+    </div>
     </header>
 {% endif %}

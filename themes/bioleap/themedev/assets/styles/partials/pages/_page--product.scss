@@ -1,16 +1,20 @@
 .#{$pre}product-page {
 
     &__content {
-        //padding-top: layout(layout--2xl) !important;
+        padding-top: layout(layout--xl) !important;
     }
 
     // LEFT COLUMN
     .#{$pre}product-image-carousel {
-        //margin-bottom: layout(spacing--lg);
+        margin-bottom: layout(spacing--lg);
     }
 
     .#{$pre}product-slick {
 
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
     .#{$pre}product-slick__nav {
@@ -25,13 +29,18 @@
 
         &-item {
             padding: 0 layout(spacing--sm);
-            height: 80px;
+
             display: flex !important;
             align-items: center;
+
+            @include respond-to(tablet) {
+                height: 80px;
+            }
 
             img {
                 width: 100%;
                 height: auto;
+
             }
         }
     }
@@ -166,20 +175,46 @@
 
         &__copy {
             @extend %text;
-            @include line-clamp(5,124px);
+            @include line-clamp(5,90px);
             margin-bottom: 0;
+            transition: transition(slow);
+
+            @include respond-to(tablet) {
+                @include line-clamp(5,102px);
+            }
+
+            @include respond-to(desktop) {
+                @include line-clamp(5,114px);
+            }
+
+            @include respond-to(desktop-large) {
+                @include line-clamp(5,124px);
+            }
+
+            &.expand {
+                max-height: 1500px;
+                transition: transition(slow);
+                display: block;
+                position: relative;
+                -webkit-line-clamp: none;
+                -webkit-box-orient: vertical;
+                //overflow: visible;
+                text-overflow: none;
+            }
         }
 
         &__view-more {
             @include responsive-type(fs--14, text);
         }
+
+
     }
 
     .#{$pre}product-attributes {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: layout(spacing--xl);
-        @include responsive-type(fs--14, text);
+        @include responsive-type(fs--13, text);
 
         &__term {
             flex-basis: 25%;
@@ -206,6 +241,7 @@
             border-bottom: border(hairline, gray);
             margin-bottom: layout(spacing--xs);
             margin-top: layout(spacing--xs);
+            @include responsive-type(fs--13, text);
         }
 
         &__icon {

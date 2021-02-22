@@ -123,6 +123,13 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/images/sample.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/images/sample.pdf",
+		"oF": 0
+		},
 	"/images/slide-dog2.jpg": {
 		"ft": 16384,
 		"iS": 197385,
@@ -547,6 +554,20 @@
 		"oAP": "/templates/facets/facets-result-item.html.twig",
 		"oF": 0
 		},
+	"/templates/field/field--node--field-content.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/field/field--node--field-content.html.twig",
+		"oF": 0
+		},
+	"/templates/field/field.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/field/field.html.twig",
+		"oF": 0
+		},
 	"/templates/navigation/menu--cta-menu.html.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -582,6 +603,13 @@
 		"oAP": "/templates/page/commerce-product.html.twig",
 		"oF": 0
 		},
+	"/templates/page/page--page.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/page/page--page.html.twig",
+		"oF": 0
+		},
 	"/templates/page/page--product-catalog.html.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -601,6 +629,76 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/templates/page/page--wishlist.html.twig",
+		"oF": 0
+		},
+	"/templates/paragraphs/paragraph--3-up-grid.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/paragraphs/paragraph--3-up-grid.html.twig",
+		"oF": 0
+		},
+	"/templates/paragraphs/paragraph--banner.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/paragraphs/paragraph--banner.html.twig",
+		"oF": 0
+		},
+	"/templates/paragraphs/paragraph--fancy-story.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/paragraphs/paragraph--fancy-story.html.twig",
+		"oF": 0
+		},
+	"/templates/paragraphs/paragraph--grid-item.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/paragraphs/paragraph--grid-item.html.twig",
+		"oF": 0
+		},
+	"/templates/paragraphs/paragraph--image-list-card.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/paragraphs/paragraph--image-list-card.html.twig",
+		"oF": 0
+		},
+	"/templates/paragraphs/paragraph--image-list.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/paragraphs/paragraph--image-list.html.twig",
+		"oF": 0
+		},
+	"/templates/paragraphs/paragraph--masthead-with-title-.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/paragraphs/paragraph--masthead-with-title-.html.twig",
+		"oF": 0
+		},
+	"/templates/paragraphs/paragraph--masthead.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/paragraphs/paragraph--masthead.html.twig",
+		"oF": 0
+		},
+	"/templates/paragraphs/paragraph--story.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/paragraphs/paragraph--story.html.twig",
+		"oF": 0
+		},
+	"/templates/paragraphs/paragraph--type-group.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/paragraphs/paragraph--type-group.html.twig",
 		"oF": 0
 		},
 	"/templates/regions/region--content.html.twig": {
@@ -643,6 +741,44 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/templates/views/views-view-grid.html.twig",
+		"oF": 0
+		},
+	"/themedev/assets/fonts/icon-fonts/fontawesome/fa-brands-400.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/themedev/assets/fonts/icon-fonts/fontawesome/fa-brands-400.eot",
+		"oF": 0
+		},
+	"/themedev/assets/fonts/icon-fonts/fontawesome/fa-brands-400.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/themedev/assets/fonts/icon-fonts/fontawesome/fa-brands-400.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/themedev/assets/fonts/icon-fonts/fontawesome/fa-brands-400.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/themedev/assets/fonts/icon-fonts/fontawesome/fa-brands-400.ttf",
+		"oF": 0
+		},
+	"/themedev/assets/fonts/icon-fonts/fontawesome/fa-brands-400.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/themedev/assets/fonts/icon-fonts/fontawesome/fa-brands-400.woff",
+		"oF": 0
+		},
+	"/themedev/assets/fonts/icon-fonts/fontawesome/fa-brands-400.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/themedev/assets/fonts/icon-fonts/fontawesome/fa-brands-400.woff2",
 		"oF": 0
 		},
 	"/themedev/assets/fonts/icon-fonts/fontawesome/fa-solid-900.eot": {
@@ -1278,6 +1414,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/themedev/assets/styles/partials/organisms/_banner.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/themedev/assets/styles/partials/organisms/_banner.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/themedev/assets/styles/partials/organisms/_card.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/themedev/assets/styles/partials/organisms/_card.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/themedev/assets/styles/partials/organisms/_catalog-filter-group.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1382,6 +1544,45 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/themedev/assets/styles/partials/organisms/_grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/themedev/assets/styles/partials/organisms/_grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/themedev/assets/styles/partials/organisms/_image-list-item.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/themedev/assets/styles/partials/organisms/_image-list-item.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/themedev/assets/styles/partials/organisms/_image-list.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/themedev/assets/styles/partials/organisms/_image-list.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/themedev/assets/styles/partials/organisms/_organisms.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1417,6 +1618,45 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/themedev/assets/styles/partials/organisms/_related-products-grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/themedev/assets/styles/partials/organisms/_status-message.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/themedev/assets/styles/partials/organisms/_status-message.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/themedev/assets/styles/partials/organisms/_story.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/themedev/assets/styles/partials/organisms/_story.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/themedev/assets/styles/partials/organisms/_type-group.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/themedev/assets/styles/partials/organisms/_type-group.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

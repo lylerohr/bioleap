@@ -1,0 +1,17 @@
+{% set heading = content.field_pg_type__heading.0 %}
+{% set subheading = content.field_pg_type__subheading.0 %}
+{% set copy = content.field_pg_type__copy.0 %}
+
+{% block paragraph %}
+<div class="bl_surface">
+    <div class="bl_surface__section bl_surface__section--100">
+        <div class="bl_type-group">
+        {% block content %}
+          <h4 class="bl_type-group__heading">{{ heading }}</h4>
+          <p class="bl_type-group__subheading">{{ subheading }}</p>
+          <p class="bl_type-group__copy">{{ copy }}</p>
+        {% endblock %}
+        </div>
+    </div>
+</div>
+{% endblock paragraph %}

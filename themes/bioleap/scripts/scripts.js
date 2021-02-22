@@ -28,8 +28,35 @@ jQuery(document).ready( function() {
         centerMode: true
     });
 
+    var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+
+    if (vw <= 768) {
+        jQuery(".bl_filter-group__name").parent().addClass("collapse");
+        console.log("Thing happened.");
+    }
+
     jQuery(".bl_filter-group__name").click( function() {
         jQuery(this).parent().toggleClass("collapse");
+    });
+
+    jQuery(".bl_header__tofuburger").click( function() {
+        jQuery(".bl_header__menus").toggleClass("open");
+    });
+
+    var showDescription = 0;
+
+    jQuery(".bl_product-description__view-more").click(function() {
+
+        if (showDescription == 0) {
+            jQuery(".bl_product-description__copy").addClass("expand");
+            jQuery(this).html("view less...");
+            showDescription = 1;
+        } else {
+            jQuery(".bl_product-description__copy").removeClass("expand");
+            jQuery(this).html("view more...");
+            showDescription = 0;
+        }
+
     });
 
 });
@@ -37,7 +64,6 @@ jQuery(document).ready( function() {
 function showModal(refID) {
     var modalID = refID.id.toString();
     var modal = document.getElementById(modalID);
-    console.log(modal);
     modal.classList.add('show');
 }
 
@@ -45,6 +71,7 @@ function hideModal(refID) {
     var modalID = refID.id.toString();
     var modal = document.getElementById(modalID);
     modal.classList.remove('show');
+    //document.getElementsByTagName('iframe').attr('src', document.getElementsByTagName('iframe').attr('src'));
 }
 
 function removeWishlistItem(el) {
@@ -57,5 +84,7 @@ function removeWishlistItem(el) {
     targetBtn.click();
 }
 
-document.getElementById("edit-product-search--2").placeholder = "search products...";
-document.getElementsByClassName("facet-item__status").innerHTML = "Hello!";
+
+if (document.getElementById("edit-product-search--2")) {
+    document.getElementById("edit-product-search--2").placeholder = "search products...";
+}

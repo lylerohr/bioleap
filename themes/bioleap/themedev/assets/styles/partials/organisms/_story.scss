@@ -1,0 +1,82 @@
+.#{$pre}story,
+.#{$pre}fancy-story {
+    display: flex;
+    margin-bottom: layout(layout--md);
+    flex-direction: column;
+
+    @include respond-to(tablet) {
+        flex-direction: row;
+    }
+
+    &--right {
+
+        @include respond-to(tablet) {
+            flex-direction: row-reverse;
+        }
+
+
+        .#{$pre}story__copy-block,
+        .#{$pre}fancy-story__copy-block  {
+            padding-left: 0;
+            padding-right: layout(spacing--md);
+        }
+
+    }
+
+    &__image-wrapper {
+        flex-basis: 100%;
+        margin-bottom: layout(spacing--md);
+
+        @include respond-to(tablet) {
+            flex-basis: 40%;
+            margin-bottom: 0;
+        }
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__copy-block {
+        padding-left: layout(spacing--md);
+        flex-basis: 100%;
+
+        @include respond-to(tablet) {
+            flex-basis: 60%;
+        }
+
+    }
+
+    &__heading {
+        @extend %heading--h5;
+    }
+
+    &__copy {
+
+    }
+
+    &__cta {
+        @extend %button;
+        @extend %button--default;
+    }
+
+    &__action-packet {
+        @extend %button;
+        @extend %button--default;
+
+        &::before {
+            font-family: "Font Awesome 5 Pro";
+            content: '\f1c1';
+            padding-right: layout(spacing--sm);
+        }
+    }
+}
+
+.#{$pre}story {
+    align-items: center;
+}
+
+.#{$pre}fancy-story {
+    padding: layout(spacing--md);
+    background-color: color(gray);
+}

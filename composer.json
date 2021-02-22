@@ -26,6 +26,7 @@
         "drupal/core-recommended": "^9.1",
         "drupal/core-vendor-hardening": "^9.1",
         "drupal/devel": "^4.1",
+        "drupal/entity_usage": "^2.0@beta",
         "drupal/facets": "^1.6",
         "drupal/inline_entity_form": "^1.0-rc6",
         "drupal/mailsystem": "^4.3",
@@ -34,10 +35,12 @@
         "drupal/search_api": "^1.18",
         "drupal/slick": "^2.2",
         "drupal/swiftmailer": "^2.0",
+        "drupal/twig_tweak": "^3.0",
         "drupal/twig_vardumper": "^3.0",
         "drupal/vardumper": "^1.5",
         "drupal/views_infinite_scroll": "^1.7",
-        "drupal/youtube": "^1.2"
+        "drupal/youtube": "^1.2",
+        "twig/extensions": "^1.5"
     },
     "conflict": {
         "drupal/drupal": "*"

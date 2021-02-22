@@ -1,0 +1,11 @@
+{% block paragraph %}
+<div class="bl_surface">
+    <div class="bl_surface__section bl_surface__section--100">
+        <div class="bl_image-list">
+        {% block content %}
+          {{ content }}
+        {% endblock %}
+        </div>
+    </div>
+</div>
+{% endblock paragraph %}

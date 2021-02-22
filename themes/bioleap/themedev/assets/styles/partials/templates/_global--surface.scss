@@ -3,6 +3,14 @@
     display: flex;
     flex-wrap: wrap;
 
+    &.row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    &.column-reverse {
+        flex-direction: column-reverse;
+    }
+
     #block-bioleap-content {
         display: flex;
         flex-wrap: wrap;
@@ -12,6 +20,8 @@
         padding-bottom: 4rem;
         width: 100%;
         flex-basis: 100%;
+
+
 
         @include respond-to(tablet) {
             padding-bottom: 5rem;
@@ -28,29 +38,69 @@
         }
 
         &--50 {
-            width: 50%;
-            flex-basis: 50%;
+            width: 100%;
+            flex-basis: 100%;
             padding: 0 layout(spacing--sm);
+
+            @include respond-to(tablet) {
+                width: 50%;
+                flex-basis: 50%;
+            }
         }
+
         &--33 {
-            width: 33%;
-            flex-basis: 33%;
+            width: 100%;
+            flex-basis: 100%;
             padding: 0 layout(spacing--sm);
+
+            @include respond-to(tablet) {
+                width: 33%;
+                flex-basis: 33%;
+            }
         }
         &--64 {
-            width: 64%;
-            flex-basis: 64%;
+            width: 100%;
+            flex-basis: 100%;
             padding: 0 layout(spacing--sm);
+
+
+
+            @include respond-to(tablet) {
+                width: 64%;
+                flex-basis: 64%;
+            }
         }
+
         &--25 {
-            width: 25%;
-            flex-basis: 25%;
+            width: 100%;
+            flex-basis: 100%;
             padding: 0 layout(spacing--sm);
+
+            @include respond-to(tablet) {
+                width: 33%;
+                flex-basis: 33%;
+            }
+
+            @include respond-to(desktop) {
+                width: 25%;
+                flex-basis: 25%;
+            }
         }
+
         &--75 {
-            width: 75%;
-            flex-basis: 75%;
+            width: 100%;
+            flex-basis: 100%;
             padding: 0 layout(spacing--sm);
+
+            @include respond-to(tablet) {
+                width: 64%;
+                flex-basis: 64%;
+            }
+
+            @include respond-to(desktop) {
+                width: 75%;
+                flex-basis: 75%;
+            }
         }
     }
 }

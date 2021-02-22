@@ -1,5 +1,9 @@
 .#{$pre}product-catalog {
-    padding-top: layout(layout--md) !important;
+    padding-top: layout(layout--xs) !important;
+
+    @include respond-to(tablet) {
+        padding-top: layout(layout--md) !important;
+    }
 
     &__header {
         margin-bottom: layout(spacing--lg);
@@ -30,12 +34,52 @@
         }
     }
 
-    .#{$pre}product-grid {
+    .#{$pre}product-catalog__product-dislay {
+        display: flex;
+        flex-direction: column;
+
+        @include respond-to(tablet) {
+            flex-direction: row;
+        }
+    }
+
+    .blazy--view--product-catalog {
         display: flex;
         flex-wrap: wrap;
 
+        .grid {
+            flex-basis: 100%;
+
+            @include respond-to(tablet) {
+                flex-basis: 50%;
+            }
+
+            @include respond-to(desktop) {
+                flex-basis: 33%;
+            }
+        }
+    }
+
+    .#{$pre}product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        @include respond-to(tablet) {
+            flex-direction: row;
+        }
+
         .#{$pre}product-card {
-            flex-basis: 33%;
+            flex-basis: 100%;
+
+            @include respond-to(tablet) {
+                flex-basis: 50%;
+            }
+
+            @include respond-to(desktop) {
+                flex-basis: 33%;
+            }
+
         }
     }
 }

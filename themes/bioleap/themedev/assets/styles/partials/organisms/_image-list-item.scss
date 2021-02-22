@@ -1,0 +1,25 @@
+.#{$pre}image-list-card {
+    display: flex;
+    margin-bottom: layout(spacing--lg);
+
+    &__image-wrapper {
+        flex-basis: 20%;
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__copy-block {
+        flex-basis: 80%;
+        padding-left: layout(spacing--md);
+    }
+
+    &__heading {
+        @extend %heading--h6;
+    }
+
+    &__copy {
+
+    }
+}

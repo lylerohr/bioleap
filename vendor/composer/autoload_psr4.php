@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Twig\\Extensions\\' => array($vendorDir . '/twig/extensions/src'),
     'Twig\\' => array($vendorDir . '/twig/twig/src'),
     'TijsVerkoyen\\CssToInlineStyles\\' => array($vendorDir . '/tijsverkoyen/css-to-inline-styles/src'),
     'TYPO3\\PharStreamWrapper\\' => array($vendorDir . '/typo3/phar-stream-wrapper/src'),

@@ -1,10 +1,12 @@
 <div class="bl_related-products">
-  {{ title_prefix }}
-  {% if label %}
-    <h2 class="bl_related-products__heading">{{ label }}</h2>
-  {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-    {{ content }}
-  {% endblock %}
+    {{ title_prefix }}
+    {% if label %}
+        {% if content %}
+        <h2 class="bl_related-products__heading">{{ label }}</h2>
+        {% endif %}
+    {% endif %}
+    {{ title_suffix }}
+    {% block content %}
+        {{ content }}
+    {% endblock %}
 </div>

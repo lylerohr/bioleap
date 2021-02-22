@@ -1,0 +1,17 @@
+{% set imgURI = file_url(content.field_pg_banner__bgimage[0]['#item'].entity.uri.value) %}
+{% set heading = content.field_pg_banner__heading.0 %}
+{% set ctaURL = content.field_pg_banner__cta[0]['#url'] %}
+{% set ctaTEXT = content.field_pg_banner__cta[0]['#title'] %}
+
+{% block paragraph %}
+
+    {% block content %}
+        <div class="bl_banner" style="background-image: url( {{ imgURI }} );">
+            <div class="bl_banner__block">
+                <h3 class="bl_banner__heading">{{ heading }}</h3>
+                <a class="bl_banner__cta" href="{{ctaURL}}">{{ ctaTEXT }}</a>
+            </div>
+        </div>
+    {% endblock %}
+
+{% endblock paragraph %}

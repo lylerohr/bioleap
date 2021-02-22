@@ -1,0 +1,17 @@
+.#{$pre}grid {
+    display: flex;
+    margin-bottom: layout(layout--lg);
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include respond-to(tablet) {
+        flex-direction: row;
+    }
+
+    &--3 {
+
+        .#{$pre}card {
+            flex-basis: 33%;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{% set inc = 0 %}
+{% block paragraph %}
+    {% block content %}
+        {% for items in content.field_pg_imlist__copy["#items"] %}
+            <div class="bl_image-list-card">
+                <div class="bl_image-list-card__image-wrapper">
+                    <img class="bl_image-list-card__image" src="{{ file_url(content.field_pg_imlist__image[inc]['#item'].entity.uri.value) }}" alt="{{ content.field_pg_imlist__image[inc]['#item'].alt }}">
+                </div>
+                <div class="bl_image-list-card__copy-block">
+                    <h6 class="bl_image-list-card__heading">{{ content.field_pg_imlist__title[inc] }}</h6>
+                    {% if content.field_pg_imlist__title[inc] %}<span class="bl_heading-rule"></span>{% endif %}
+                    {{ content.field_pg_imlist__copy[inc] }}
+                </div>
+                {% set inc = inc + 1 %}
+            </div>
+        {% endfor %}
+    {% endblock %}
+{% endblock paragraph %}

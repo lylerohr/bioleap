@@ -1,0 +1,14 @@
+{% set imageURI = file_url(content.field_pg_masttitle__image[0]['#item'].entity.uri.value) %}
+{% set heading = content.field_pg_masttitle__heading.0 %}
+
+{% block paragraph %}
+    <div class="bl_masthead bl_masthead--title">
+        {% block content %}
+        <div class="bl_masthead__image-wrapper" style="background-image: url({{ imageURI }})">
+        </div>
+        <div class="bl_masthead__banner">
+            <h2 class="bl_masthead__heading">{{ heading }}</h2>
+        </div>
+        {% endblock %}
+    </div>
+{% endblock paragraph %}
