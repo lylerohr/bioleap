@@ -58,11 +58,11 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/images/default-product-image-43.png": {
+	"/images/default-product-img.png": {
 		"ft": 32768,
 		"iS": 93204,
 		"oA": 0,
-		"oAP": "/images/default-product-image-43.png",
+		"oAP": "/images/default-product-img.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -89,6 +89,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/images/home-header.jpg": {
+		"ft": 16384,
+		"iS": 187884,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/home-header.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/images/logo-no-tag-white.png": {
@@ -123,19 +134,19 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/images/sample.pdf": {
+	"/images/sample-doc.pdf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/images/sample.pdf",
+		"oAP": "/images/sample-doc.pdf",
 		"oF": 0
 		},
-	"/images/slide-dog2.jpg": {
+	"/images/slide-dog.jpg": {
 		"ft": 16384,
 		"iS": 197385,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/images/slide-dog2.jpg",
+		"oAP": "/images/slide-dog.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -151,55 +162,55 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/images/ti1.png": {
+	"/images/ti11.png": {
 		"ft": 32768,
 		"iS": 147959,
 		"oA": 0,
-		"oAP": "/images/ti1.png",
+		"oAP": "/images/ti11.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/images/ti2.png": {
+	"/images/ti21.png": {
 		"ft": 32768,
 		"iS": 147902,
 		"oA": 0,
-		"oAP": "/images/ti2.png",
+		"oAP": "/images/ti21.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/images/ti3.png": {
+	"/images/ti31.png": {
 		"ft": 32768,
 		"iS": 148072,
 		"oA": 0,
-		"oAP": "/images/ti3.png",
+		"oAP": "/images/ti31.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/images/ti4.png": {
+	"/images/ti41.png": {
 		"ft": 32768,
 		"iS": 147773,
 		"oA": 0,
-		"oAP": "/images/ti4.png",
+		"oAP": "/images/ti41.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/images/ti5.png": {
+	"/images/ti51.png": {
 		"ft": 32768,
 		"iS": 147917,
 		"oA": 0,
-		"oAP": "/images/ti5.png",
+		"oAP": "/images/ti51.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

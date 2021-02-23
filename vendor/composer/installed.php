@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '8c506599147c623e8d01465df5c46ca9258b1ac7',
+    'reference' => '903aecf09f6483eb53fe79c033a80936ce87b7fe',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -619,6 +619,15 @@
         0 => '9.1.0',
       ),
     ),
+    'drupal/ctools' => 
+    array (
+      'pretty_version' => '3.4.0',
+      'version' => '3.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-3.4',
+    ),
     'drupal/datetime' => 
     array (
       'replaced' => 
@@ -834,7 +843,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '8c506599147c623e8d01465df5c46ca9258b1ac7',
+      'reference' => '903aecf09f6483eb53fe79c033a80936ce87b7fe',
     ),
     'drupal/link' => 
     array (
@@ -972,6 +981,15 @@
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/pathauto' => 
+    array (
+      'pretty_version' => '1.8.0',
+      'version' => '1.8.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.8',
     ),
     'drupal/phpmailer_smtp' => 
     array (
