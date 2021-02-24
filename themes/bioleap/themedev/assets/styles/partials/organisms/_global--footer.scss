@@ -36,6 +36,12 @@
 
     &__social-link {
         padding: 0 layout(spacing--xs);
+        color: white;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: color(orange);
+        }
     }
 
     &__credentials {
@@ -46,6 +52,18 @@
             height: 60px;
             flex-basis: 33%;
             padding: 0 layout(spacing--xs);
+        }
+    }
+
+    #block-bioleap-footer {
+
+        ul li a {
+            color: white;
+
+            &:hover {
+                color: white;
+                text-decoration: underline;
+            }
         }
     }
 }

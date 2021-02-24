@@ -115,7 +115,7 @@
 		},
 	"/images/navs-logo.png": {
 		"ft": 32768,
-		"iS": 48780,
+		"iS": 39891,
 		"oA": 0,
 		"oAP": "/images/navs-logo.png",
 		"oF": 0,
@@ -147,6 +147,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/images/slide-dog.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/slide-dog2.jpg": {
+		"ft": 16384,
+		"iS": 197385,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/slide-dog2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
