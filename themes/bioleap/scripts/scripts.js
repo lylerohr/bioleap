@@ -105,14 +105,12 @@ function checkOverflow(el) {
    return isOverflowing;
 }
 
-
-
 function showDescriptionViewMore(el) {
-    console.log(document.getElementById('bl_product-descriiption__view-more'));
-
     if (checkOverflow(el)) {
         document.getElementById('bl_product-descriiption__view-more').style.display = "block";
     }
 }
 
-showDescriptionViewMore(document.getElementById('bl_product-description__copy'));
+if (document.getElementById('bl_product-descriiption__view-more')) {
+    showDescriptionViewMore(document.getElementById('bl_product-description__copy'));
+}
