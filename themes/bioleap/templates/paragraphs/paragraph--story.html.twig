@@ -17,10 +17,16 @@
                 <img class="bl_story__image" src="{{imageURI}}" alt="{{imageALT}}">
             </div>
             <div class="bl_story__copy-block">
+                {% if heading %}
                 <h5 class="bl_story__heading">{{heading}}</h5>
+                {% endif %}
                 {% if heading %}<span class="bl_heading-rule"></span>{% endif %}
+                {% if copy %}
                 <p class="bl_story__copy">{{copy}}</p>
+                {% endif %}
+                {% if ctaURL %}
                 <a class="bl_story__cta" href="{{ctaURL}}">{{ctaTEXT}}</a>
+                {% endif %}
             </div>
         {% endblock %}
         </div>
