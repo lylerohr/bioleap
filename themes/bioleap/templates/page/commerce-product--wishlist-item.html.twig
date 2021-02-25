@@ -22,7 +22,7 @@
         <dd class="bl_wishlist-card__name list-price">{{product.field_prod__price_info.0}}</dd>
     </dl>
     <div class="bl_wishlist-card__actions">
-        <a class="bl_wishlist-card__actions-where-to-buy" href="field_prod__buy_url">Where to Buy</a>
+        <a class="bl_wishlist-card__actions-where-to-buy" href="{{product.field_prod__buy_url[0]["#url"].uri}}">Where to Buy</a>
         <!--<a href="#" class="bl_wishlist-card__actions-remove" onclick="removeWishlistItem(this)">Remove</a>-->
     </div>
 </div>

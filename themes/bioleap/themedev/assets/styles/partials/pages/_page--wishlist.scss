@@ -5,6 +5,11 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: layout(spacing--sm);
+
+        div[data-drupal-selector="edit-header"] {
+            position: absolute;
+            top: 64px;
+        }
     }
 
     &__heading {
@@ -14,7 +19,7 @@
 
     .wishlist-button {
         padding-right: layout(spacing--md);
-        
+
         &::before {
             font-family: "Font Awesome 5 Pro";
             content: '\f0e0';

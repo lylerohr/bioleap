@@ -70,8 +70,10 @@ function showModal(refID) {
 function hideModal(refID) {
     var modalID = refID.id.toString();
     var modal = document.getElementById(modalID);
+    var video = document.getElementById("ytvid-" + modalID);
+    video.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
     modal.classList.remove('show');
-    //document.getElementsByTagName('iframe').attr('src', document.getElementsByTagName('iframe').attr('src'));
+
 }
 
 function removeWishlistItem(el) {
@@ -88,3 +90,29 @@ function removeWishlistItem(el) {
 if (document.getElementById("edit-product-search--2")) {
     document.getElementById("edit-product-search--2").placeholder = "search products...";
 }
+
+function checkOverflow(el) {
+   var curOverflow = el.style.overflow;
+
+   if ( !curOverflow || curOverflow === "visible" )
+      el.style.overflow = "hidden";
+
+   var isOverflowing = el.clientWidth < el.scrollWidth
+      || el.clientHeight < el.scrollHeight;
+
+   el.style.overflow = curOverflow;
+
+   return isOverflowing;
+}
+
+
+
+function showDescriptionViewMore(el) {
+    console.log(document.getElementById('bl_product-descriiption__view-more'));
+
+    if (checkOverflow(el)) {
+        document.getElementById('bl_product-descriiption__view-more').style.display = "block";
+    }
+}
+
+showDescriptionViewMore(document.getElementById('bl_product-description__copy'));

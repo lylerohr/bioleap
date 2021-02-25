@@ -68,7 +68,7 @@
                         <div onClick="hideModal({{product.field_prod__tube[videoModalIncrement]["#video_id"]}})" class="bl_video-modal__bg"></div>
                         <div class="bl_video-modal__container">
                             <div class="bl_embed-container">
-                                <iframe class="bl_video-frame" src="https://www.youtube.com/embed/{{product.field_prod__tube[videoModalIncrement]["#video_id"]}}?version=3&enablejsapi=1" frameborder="0"></iframe>
+                                <iframe class="bl_video-frame youtube-video" id="ytvid-{{product.field_prod__tube[videoModalIncrement]["#video_id"]}}" src="https://www.youtube.com/embed/{{product.field_prod__tube[videoModalIncrement]["#video_id"]}}?version=3&enablejsapi=1" frameborder="0"></iframe>
                             </div>
                             <span onClick="hideModal({{product.field_prod__tube[videoModalIncrement]["#video_id"]}})" class="bl_video-modal__close">close video</span>
                         </div>
@@ -106,10 +106,10 @@
 
     </div>
     <div class="bl_product-description">
-        <div class="bl_product-description__copy">
+        <div class="bl_product-description__copy" id="bl_product-description__copy">
             {{product.body.0}}
         </div>
-        <a class="bl_product-description__view-more"href="#">view more...</a>
+        <a class="bl_product-description__view-more" id="bl_product-descriiption__view-more">view more...</a>
     </div>
     <h6 class="bl_product-additional__heading">Product Details</h6>
     <span class="bl_heading-rule"></span>

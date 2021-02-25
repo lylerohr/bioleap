@@ -58,11 +58,27 @@
     &__cta {
         @extend %button;
         @extend %button--default;
+        margin-bottom: layout(spacing--md);
+        display: block;
+
+        @include respond-to(tablet) {
+            display: inline-block;
+        }
+
+        @include respond-to(desktop) {
+            margin-bottom: 0;
+            margin-right: layout(spacing--md);
+        }
     }
 
     &__action-packet {
         @extend %button;
         @extend %button--default;
+        display: block;
+
+        @include respond-to(tablet) {
+            display: inline-block;
+        }
 
         &::before {
             font-family: "Font Awesome 5 Pro";

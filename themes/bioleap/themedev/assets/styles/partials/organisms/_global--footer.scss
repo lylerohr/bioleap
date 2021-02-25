@@ -57,9 +57,25 @@
 
     #block-bioleap-footer {
 
+        ul {
+            margin-top: layout(spacing--xs);
+        }
+
+        ul li {
+            display: inline-block;
+
+            &::after {
+                content: ' | ';
+            }
+            &:last-child::after {
+                content: '';
+            }
+        }
+
         ul li a {
             color: white;
-
+            font-weight: 700;
+            
             &:hover {
                 color: white;
                 text-decoration: underline;

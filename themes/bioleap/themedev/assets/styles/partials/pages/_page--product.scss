@@ -205,6 +205,8 @@
 
         &__view-more {
             @include responsive-type(fs--14, text);
+            cursor: pointer;
+            display: none;
         }
 
 

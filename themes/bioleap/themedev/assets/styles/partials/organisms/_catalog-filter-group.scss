@@ -79,12 +79,22 @@
         li::before {
             content: "- ";
             color: color(blue);
-            position: relative;
+            position: absolute;
             left: layout(spacing--md);
+            top: 3px;
+
+            @include respond-to(desktop-large) {
+                top: 5px;
+            }
         }
 
         a {
             padding-left: layout(spacing--lg);
+
+            @include respond-to(desktop-extra-large) {
+                padding-left: layout(spacing--xl);
+            }
+
 
             &.is-active {
                 font-weight: 600;
