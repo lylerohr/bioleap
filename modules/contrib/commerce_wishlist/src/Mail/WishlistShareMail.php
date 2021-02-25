@@ -52,7 +52,7 @@ class WishlistShareMail implements WishlistShareMailInterface {
       //return FALSE;
     //}
 
-    $subject = $this->t('@sender_name sent you a wishlist from @site-name ', [
+    $subject = $this->t('@sender_name Sent You a List of Dissection Alternatives from BioLEAP', [
       '@site-name' => $this->configFactory->get('system.site')->get('name'),
       // COMBAK: TAHOE CODE
       '@sender_name' => $_SESSION['sender_data']['#sender_name'],

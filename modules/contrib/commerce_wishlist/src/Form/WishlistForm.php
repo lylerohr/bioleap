@@ -158,7 +158,7 @@ class WishlistForm extends ContentEntityForm {
         $account = $this->currentUser();
       }
       if ($wishlist_id = $this->wishlistProvider->getWishlistId($this->entity->bundle(), $account)) {
-        $form_state->setErrorByName('duplicate', 'Cannot create a new wishlist (Only a single wishlist per customer is allowed).');
+        $form_state->setErrorByName('duplicate', 'Cannot create a new wishlist (Only a single product list per customer is allowed).');
       }
     }
     return parent::validateForm($form, $form_state);
@@ -187,7 +187,7 @@ class WishlistForm extends ContentEntityForm {
    */
   public function save(array $form, FormStateInterface $form_state) {
     $this->entity->save();
-    $this->messenger()->addStatus($this->t('The wishlist %label has been successfully saved.', ['%label' => $this->entity->label()]));
+    $this->messenger()->addStatus($this->t('The product list %label has been successfully saved.', ['%label' => $this->entity->label()]));
     if (!empty($form_state->getTriggeringElement()['#continue'])) {
       $form_state->setRedirect('entity.commerce_wishlist_item.collection', ['commerce_wishlist' => $this->entity->id()]);
     }

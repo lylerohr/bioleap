@@ -57,7 +57,7 @@ class WishlistEventSubscriber implements EventSubscriberInterface {
    */
   public function displayAddToWishlistMessage(WishlistEntityAddEvent $event) {
     $purchased_entity = $event->getEntity();
-    $this->messenger->addStatus($this->t('@entity added to <a href=":url">your wishlist</a>.', [
+    $this->messenger->addStatus($this->t('@entity added to <a href=":url">your product list</a>.', [
       '@entity' => $purchased_entity->label(),
       ':url' => Url::fromRoute('commerce_wishlist.page')->toString(),
     ]));

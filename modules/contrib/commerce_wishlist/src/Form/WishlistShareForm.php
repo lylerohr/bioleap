@@ -86,7 +86,7 @@ class WishlistShareForm extends EntityForm {
   protected function actions(array $form, FormStateInterface $form_state) {
     $actions['submit'] = [
       '#type' => 'submit',
-      '#value' => $this->t('Share Wishlist'),
+      '#value' => $this->t('Share List'),
       '#submit' => ['::submitForm'],
     ];
     if ($this->isAjax()) {
@@ -118,7 +118,7 @@ class WishlistShareForm extends EntityForm {
 
     $this->wishlistShareMail->send($wishlist, $to);
 
-    $this->messenger()->addStatus($this->t('Shared the wishlist to @sender_name at the following email address: @recipient.', [
+    $this->messenger()->addStatus($this->t('Shared the product list to @sender_name at the following email address: @recipient.', [
       '@recipient' => $to,
       '@sender_name' => $sender_data['#sender_name']
     ]));

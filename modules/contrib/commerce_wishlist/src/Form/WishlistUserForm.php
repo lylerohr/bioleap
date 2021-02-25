@@ -183,7 +183,7 @@ class WishlistUserForm extends EntityForm {
       '#type' => 'container',
     ];
     $form['header']['empty_text'] = [
-      '#markup' => $this->t('Your wishlist is empty.'),
+      '#markup' => $this->t('<p class="empty-product-list-message">Your product list is empty.</p>'),
       '#access' => !$wishlist_has_items,
     ];
     // COMBAK: TAHOE EDIT

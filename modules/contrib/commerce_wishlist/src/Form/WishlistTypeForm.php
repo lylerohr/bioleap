@@ -54,7 +54,7 @@ class WishlistTypeForm extends BundleEntityFormBase {
     /** @var \Drupal\commerce_wishlist\Entity\WishlistTypeInterface $wishlist_type */
     $wishlist_type = $this->entity;
     $status = $wishlist_type->save();
-    $this->messenger()->addStatus($this->t('Saved the %label wishlist type.', ['%label' => $wishlist_type->label()]));
+    $this->messenger()->addStatus($this->t('Saved the %label product list type.', ['%label' => $wishlist_type->label()]));
     $form_state->setRedirect('entity.commerce_wishlist_type.collection');
   }
 
