@@ -3,7 +3,7 @@
     margin-bottom: layout(spacing--lg);
 
     &__image-wrapper {
-        flex-basis: 20%;
+        flex-basis: 10%;
     }
 
     &__image {
@@ -11,7 +11,7 @@
     }
 
     &__copy-block {
-        flex-basis: 80%;
+        flex-basis: 90%;
         padding-left: layout(spacing--md);
     }
 
