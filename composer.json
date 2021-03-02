@@ -28,6 +28,7 @@
         "drupal/devel": "^4.1",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/facets": "^1.6",
+        "drupal/google_analytics": "^3.1",
         "drupal/inline_entity_form": "^1.0-rc6",
         "drupal/mailsystem": "^4.3",
         "drupal/paragraphs": "^1.12",
