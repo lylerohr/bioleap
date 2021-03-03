@@ -2880,7 +2880,7 @@
 "projectAttributes": {
 	"creationDate": 633635736.190359,
 	"displayValue": "bioleap",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_orange",
 	"iconImageWasSetByUser": 0,
 	"lastBuiltDate": 633636327.933038
