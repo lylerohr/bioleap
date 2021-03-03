@@ -331,8 +331,6 @@ class WishlistUserForm extends EntityForm {
     foreach ($wishlist->getItems() as $wishlist_item) {
       $this->addItemToCart($wishlist_item);
     }
-    $wlview = \Drupal\views\Views::getView('commerce_wishlists');
-    $wlview->storage->invalidateCaches();
   }
 
   /**

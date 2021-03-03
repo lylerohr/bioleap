@@ -98,8 +98,7 @@ class WishlistItemForm extends ContentEntityForm {
     $this->entity->save();
     $this->messenger()->addStatus($this->t('The item %label has been successfully saved.', ['%label' => $this->entity->label()]));
     $form_state->setRedirect('entity.commerce_wishlist_item.collection', ['commerce_wishlist' => $this->entity->getWishlistId()]);
-    $wlview = \Drupal\views\Views::getView('commerce_wishlists');
-    $wlview->storage->invalidateCaches();
+    drupal_flush_all_caches();
   }
 
 }
