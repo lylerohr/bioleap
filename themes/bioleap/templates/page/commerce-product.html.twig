@@ -115,11 +115,44 @@
     <span class="bl_heading-rule"></span>
     <dl class="bl_product-attributes">
         <dt class="bl_product-attributes__term">Format:</dt>
-        <dd class="bl_product-attributes__name">{{product.field_prod__format.0}}</dd>
+        <dd class="bl_product-attributes__name">
+            {% set finc = 0 %}
+            {% for items in product.field_prod__format["#items"] %}
+                {{product.field_prod__format[finc]}}
+                {% if product.field_prod__format["#items"]|length > 1 %}
+                    {% if finc < product.field_prod__format["#items"]|length - 1 %}
+                    ,
+                    {% endif %}
+                {% endif %}
+                {% set finc = finc + 1 %}
+            {% endfor %}
+        </dd>
         <dt class="bl_product-attributes__term">Animal:</dt>
-        <dd class="bl_product-attributes__name">{{product.field_prod__animal.0}}</dd>
+        <dd class="bl_product-attributes__name">
+            {% set ainc = 0 %}
+            {% for items in product.field_prod__animal["#items"] %}
+                {{product.field_prod__animal[ainc]}}
+                {% if product.field_prod__animal["#items"]|length > 1 %}
+                    {% if ainc < product.field_prod__animal["#items"]|length - 1 %}
+                    ,
+                    {% endif %}
+                {% endif %}
+                {% set ainc = ainc + 1 %}
+            {% endfor %}
+        </dd>
         <dt class="bl_product-attributes__term">Grade:</dt>
-        <dd class="bl_product-attributes__name">{{product.field_prod__grade.0}}</dd>
+        <dd class="bl_product-attributes__name">
+            {% set ginc = 0 %}
+            {% for items in product.field_prod__grade["#items"] %}
+                {{product.field_prod__grade[ginc]}}
+                {% if product.field_prod__grade["#items"]|length > 1 %}
+                    {% if ginc < product.field_prod__grade["#items"]|length - 1 %}
+                    ,
+                    {% endif %}
+                {% endif %}
+                {% set ginc = ginc + 1 %}
+            {% endfor %}
+        </dd>
     </dl>
     <div class="bl_product-additional">
         <h6 class="bl_product-additional__heading">Additional Details</h6>

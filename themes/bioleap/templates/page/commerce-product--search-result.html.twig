@@ -8,20 +8,30 @@
     <h4 class="bl_product-card__title"><a href="#">{{product.title.0}}</a></h4>
     <dl class="bl_product-card__attributes">
         <dt class="bl_product-card__term">Format:</dt>
-        <dd class="bl_product-card__name">{{product.field_prod__format.0}}</dd>
+        <dd class="bl_product-card__name">
+            {% set finc = 0 %}
+            {% for items in product.field_prod__format["#items"] %}
+                {{product.field_prod__format[finc]}}
+                {% if product.field_prod__format["#items"]|length > 1 %}
+                    {% if finc < product.field_prod__format["#items"]|length - 1 %}
+                    ,
+                    {% endif %}
+                {% endif %}
+                {% set finc = finc + 1 %}
+            {% endfor %}
+        </dd>
         <dt class="bl_product-card__term">Grade:</dt>
         <dd class="bl_product-card__name">
-        {% set inc = 0 %}
-        {{ dump(product.field_prod__grade) }}
-        {% for items in product.field_prod__grade["#items"] %}
-            {{product.field_prod__grade[inc]}}
-            {% if product.field_prod__grade["#items"]|length > 1 %}
-                {% if inc < product.field_prod__grade["#items"]|length - 1 %}
-                ,
+            {% set ginc = 0 %}
+            {% for items in product.field_prod__grade["#items"] %}
+                {{product.field_prod__grade[ginc]}}
+                {% if product.field_prod__grade["#items"]|length > 1 %}
+                    {% if ginc < product.field_prod__grade["#items"]|length - 1 %}
+                    ,
+                    {% endif %}
                 {% endif %}
-            {% endif %}
-            {% set inc = inc + 1 %}
-        {% endfor %}
+                {% set ginc = ginc + 1 %}
+            {% endfor %}
         </dd>
     </dl>
 </div>

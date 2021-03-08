@@ -38,6 +38,14 @@
         &.is-active {
             font-weight: 600;
         }
+
+        &[data-drupal-facet-item-id="format-reset-all"] {
+            font-weight: 400;
+
+            span.fas {
+                display: none;
+            }
+        }
     }
 
     &__list {
