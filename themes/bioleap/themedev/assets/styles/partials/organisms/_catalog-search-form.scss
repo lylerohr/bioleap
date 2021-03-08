@@ -10,7 +10,8 @@
         flex-basis: 100%;
 
         // Search text field
-        .form-item-product-search {
+        .form-item-product-search,
+        .form-item-search-api-fulltext {
             margin-right: layout(spacing--sm);
             position: relative;
             flex-basis: 100%;

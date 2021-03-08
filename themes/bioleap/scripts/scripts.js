@@ -91,6 +91,10 @@ if (document.getElementById("edit-product-search--2")) {
     document.getElementById("edit-product-search--2").placeholder = "search products...";
 }
 
+if (document.getElementById("edit-search-api-fulltext--2")) {
+    document.getElementById("edit-search-api-fulltext--2").placeholder = "search products...";
+}
+
 function checkOverflow(el) {
    var curOverflow = el.style.overflow;
 
