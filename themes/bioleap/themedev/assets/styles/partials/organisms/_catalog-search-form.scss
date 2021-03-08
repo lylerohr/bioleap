@@ -11,7 +11,8 @@
 
         // Search text field
         .form-item-product-search,
-        .form-item-search-api-fulltext {
+        .form-item-search-api-fulltext,
+        .form-item-search-query {
             margin-right: layout(spacing--sm);
             position: relative;
             flex-basis: 100%;
