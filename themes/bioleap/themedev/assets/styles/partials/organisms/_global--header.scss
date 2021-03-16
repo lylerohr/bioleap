@@ -129,6 +129,9 @@
                         line-height: $nav-height;
                         height: $nav-height;
                         padding: 0 layout(spacing--sm);
+                        vertical-align: middle;
+                        display: table-cell;
+                        line-height: 1rem !important;
                     }
                 }
 
@@ -172,6 +175,9 @@
 
                     @include respond-to(desktop-large) {
                         font-size: .85rem;
+                        vertical-align: middle;
+                        display: table-cell;
+                        line-height: 1rem !important;
                     }
 
                     @include respond-to(desktop-extra-large) {
@@ -183,6 +189,13 @@
                     @extend %button;
                     @extend %button--super;
                     display: block;
+
+                    @include respond-to(desktop-large) {
+                        vertical-align: middle;
+                        display: table-cell;
+                        line-height: 1rem !important;
+                    }
+
                 }
 
                 ul li a,
@@ -196,6 +209,9 @@
 
                     @include respond-to(desktop-large) {
                         font-size: .85rem;
+                        vertical-align: middle;
+                        display: table-cell;
+                        line-height: 1rem !important;
                     }
 
                     @include respond-to(desktop-extra-large) {
