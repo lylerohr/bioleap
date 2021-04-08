@@ -32,6 +32,7 @@
 
             display: flex !important;
             align-items: center;
+            cursor: pointer;
 
             @include respond-to(tablet) {
                 height: 80px;

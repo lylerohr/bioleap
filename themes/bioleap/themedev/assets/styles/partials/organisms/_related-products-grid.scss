@@ -3,4 +3,8 @@
     &__heading {
         @extend %heading--h6;
     }
+
+    .block-column > .grid, .item-list > .block-column > .grid {
+        margin: 0 !important;
+    }
 }

@@ -338,6 +338,16 @@ function commerce_product_type_labels() {
 }
 
 /**
+ * Implements hook_views_plugins_argument_default_alter().
+ *
+ * Override the core default taxonomy term id views argument default
+ * to provide commerce product entity integration.
+ */
+function commerce_product_views_plugins_argument_default_alter(array &$plugins) {
+  $plugins['taxonomy_tid']['class'] = 'Drupal\commerce_product\Plugin\views\argument_default\ProductTid';
+}
+
+/**
  * Implements hook_config_schema_info_alter().
  *
  * This method provides a compatibility layer to allow new config schemas to be
