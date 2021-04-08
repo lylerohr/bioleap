@@ -1,4 +1,4 @@
-{% set carouselIncrement = 0 %}
+ {% set carouselIncrement = 0 %}
 {% set carouselNavIncrement = 0 %}
 {% set filesIncrement = 0 %}
 {% set videoIncrement = 0 %}
@@ -221,4 +221,8 @@
     </div>
     {% endif %}
 </div>
+</div>
+
+<div class="bl_related-products">
+    {{ drupal_view('prod_related_animal', 'related_animal_products', tid) }}
 </div>
