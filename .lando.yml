@@ -10,3 +10,4 @@ services:
       - appserver
   appserver:
     type: php
+    scanner: false
